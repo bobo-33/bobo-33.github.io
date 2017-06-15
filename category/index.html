@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-post">
+  <html class="light page-category">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>移动端开发标准总结---1 | flowers</title>
+  <title>category | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,16 +15,13 @@
     <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="###Welcome to use MarkDown  height固定  fixed-top:48px fixed-bottom:49px 列表型条性格用–line-height：50px 列表型条性格间距用–min-height:12px   border       background-image: linear-gradient(180deg,#ddd,#ddd 50%,transpar">
-<meta property="og:type" content="article">
-<meta property="og:title" content="移动端开发标准总结---1">
-<meta property="og:url" content="https://bobo-33.github.io/2017/06/07/移动端开发标准总结-1/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="category">
+<meta property="og:url" content="https://bobo-33.github.io/category/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="###Welcome to use MarkDown  height固定  fixed-top:48px fixed-bottom:49px 列表型条性格用–line-height：50px 列表型条性格间距用–min-height:12px   border       background-image: linear-gradient(180deg,#ddd,#ddd 50%,transpar">
-<meta property="og:updated_time" content="2017-06-07T09:35:42.972Z">
+<meta property="og:updated_time" content="2017-06-15T02:41:41.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="移动端开发标准总结---1">
-<meta name="twitter:description" content="###Welcome to use MarkDown  height固定  fixed-top:48px fixed-bottom:49px 列表型条性格用–line-height：50px 列表型条性格间距用–min-height:12px   border       background-image: linear-gradient(180deg,#ddd,#ddd 50%,transpar">
+<meta name="twitter:title" content="category">
 
   
 
@@ -87,8 +84,17 @@
     <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
   
 
-  <div class="post-header CENTER">
-   
+  <div class="content content-category">
+  <div class="page-header">
+
+  
+    <div class="breadcrumb">
+      <div class="location">Categories</div>
+      <i class="icon-location"></i>
+    </div>
+  
+
+  
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">盒子</span>
@@ -178,165 +184,39 @@
   </div>
 
 
-</div>
 
-
-
-
-<div class="content content-post CENTER">
-   <article id="post-移动端开发标准总结-1" class="article article-type-post" itemprop="blogPost">
-  <header class="article-header">
-    <h1 class="post-title">移动端开发标准总结---1</h1>
-
-    <div class="article-meta">
-      <span>
-        <i class="icon-calendar"></i>
-        <span>2017.06.07</span>
-      </span>
-
-      
-        <span class="article-author">
-          <i class="icon-user"></i>
-          <span>bobo-33</span>
-        </span>
-      
-
-      
-
-
-      
-        <span>
-          <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/06/07/移动端开发标准总结-1/#disqus_thread"></a>
-        </span>
-      
-
-      
-      <i class="fa fa-eye"></i> 
-        <span id="busuanzi_container_page_pv">
-           &nbsp热度 <span id="busuanzi_value_page_pv">
-           <i class="fa fa-spinner fa-spin"></i></span>℃
-        </span>
-      
-
-      
-      
-    </div>
-  </header>
-
-  <div class="article-content">
-    
-      <p>###Welcome to use MarkDown</p>
-<ul>
-<li><p>height固定</p>
-<ol>
-<li>fixed-top:48px</li>
-<li>fixed-bottom:49px</li>
-<li>列表型条性格用–line-height：50px</li>
-<li>列表型条性格间距用–min-height:12px</li>
-</ol>
-</li>
-<li><p>border</p>
-</li>
-</ul>
-<pre><code>    background-image: linear-gradient(180deg,#ddd,#ddd 50%,transparent 50%),linear-gradient(0deg,#ddd,#ddd 50%,transparent 50%);
-    background-size: 100% 1px,100% 1px;
-    background-repeat: no-repeat;
-    background-position: top,bottom;
-
-
-
-代替
-
-    border：1px solid #ccc;（区分几倍屏幕，当大于一倍是边框就会很粗）
-</code></pre><ul>
-<li><p>字体</p>
-<ol>
-<li>字体一般为16px</li>
-<li>字体图标用阿里字体库（显示的都是能用上的）</li>
-<li><p>文字可用—–</p>
-<ul>
-<li><p>字体</p>
-<pre><code>:before{content:&quot;￥&quot;}
-</code></pre></li>
-</ul>
-<hr>
-<ul>
-<li><p>属性</p>
-<pre><code>a.content:after {
-   content: attr(href);
-}
-
-&lt;a class=&quot;content&quot; href=&quot;http://www.zhangxinxu.com/&quot;&gt;此标签的href值是：&lt;/a&gt;
-</code></pre></li>
-</ul>
-<hr>
-<ul>
-<li><p>图片</p>
-<pre><code>p a[href $=&quot;.pdf&quot;]:after {
-    content:url(../image/icon_pdf.png);
-}
-p a[rel = &quot;external&quot;]:after {
-    content:url(../image/icon_link.png);
-}
-
-&lt;p&gt;您可以查看此PDF文件：&lt;a href=&quot;/sample.pdf&quot;&gt;web站点的性能优化.pdf&lt;/a&gt;，或是在线查看，&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/&quot; rel=&quot;external&quot;&gt;点击这里&lt;/a&gt;。&lt;/p&gt;
-</code></pre></li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>宽度</p>
-<p>  width: calc(50% - 40px);——(width-(padding+border)*2-margin)——需要有空格</p>
-</li>
-</ul>
-
-    
-  </div>
-</article>
-
-
-   
-  <div class="text-center donation">
-    <div class="inner-donation">
-      <span class="btn-donation">支持一下</span>
-      <div class="donation-body">
-        <div class="tip text-center">扫一扫，支持forsigner</div>
-        <ul class="theme.donation.items.length">
-        
-          <li class="item">
-            <img src="/images/qr-wechat.png" alt="">
-          </li>
-        
-          <li class="item">
-            <img src="/images/qr-alipay.png" alt="">
-          </li>
-        
-        </ul>
+  <div class="box-blog-info">
+    <a class="avatar" href="/">
+      <img src="/images/avatar.jpg" alt="" />
+    </a>
+    <div class="info">
+      <h3 class="name" style="font-family: calligraffittiregular">
+        bobo-33
+      </h3>
+      <div class="slogan">
+        Find the bug of the world
       </div>
     </div>
   </div>
 
+</div>
 
-   
-  <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/06/07/hello-world/">
-        <i class="icon icon-angle-left"></i>
-    </a>
-    <a class="show pull-right" href="/2017/06/07/移动端开发标准总结-2/">
-        <i class="icon icon-angle-right"></i>
-    </a>
+  <section class="category-box">
+  <div class="category-title">Categories</div>
+  <div class="category-list">
+    
   </div>
+</section>
 
-
-
-
+  <ul class="list-post"></ul>
 </div>
 
 
   <a id="backTop" class="back-top">
     <i class="icon-angle-up"></i>
   </a>
+
+
 
 
 
@@ -435,44 +315,6 @@ p a[rel = &quot;external&quot;]:after {
 </div>
 
 
-
-  
-      <div class="fexo-comments comments-post">
-    
-  <section class="disqus-comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-  </section>
-
-  <script>
-    var disqus_shortname = 'forsigner';
-    
-    var disqus_url = 'https://bobo-33.github.io/2017/06/07/移动端开发标准总结-1/';
-    
-    (function(){
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-
-  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
-
-
-
-    
-
-
-
-
-    
-
-    
-	
-  </div>
 
   
 
