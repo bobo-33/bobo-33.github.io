@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-post">
+  <html class="light page-page">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>:before和:after用法总结 | flowers</title>
+  <title>living | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,16 +15,13 @@
     <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="伪类和伪元素 伪类：向某选择器添加特殊效果  伪元素：将特殊效果添加到某选择器 span:hover//伪类 span::before//伪元素   为了兼容性，将伪类和伪元素都写成单冒号 常见的伪类和伪元素 伪类  :link  :visited  :hover  :active  :target  :not(s)  :focus    伪元素  :before  :after  :first-">
-<meta property="og:type" content="article">
-<meta property="og:title" content=":before和:after用法总结">
-<meta property="og:url" content="https://bobo-33.github.io/2017/06/15/before和-after用法总结/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="living">
+<meta property="og:url" content="https://bobo-33.github.io/living/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="伪类和伪元素 伪类：向某选择器添加特殊效果  伪元素：将特殊效果添加到某选择器 span:hover//伪类 span::before//伪元素   为了兼容性，将伪类和伪元素都写成单冒号 常见的伪类和伪元素 伪类  :link  :visited  :hover  :active  :target  :not(s)  :focus    伪元素  :before  :after  :first-">
-<meta property="og:updated_time" content="2017-06-15T07:43:26.799Z">
+<meta property="og:updated_time" content="2017-06-17T03:29:24.452Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content=":before和:after用法总结">
-<meta name="twitter:description" content="伪类和伪元素 伪类：向某选择器添加特殊效果  伪元素：将特殊效果添加到某选择器 span:hover//伪类 span::before//伪元素   为了兼容性，将伪类和伪元素都写成单冒号 常见的伪类和伪元素 伪类  :link  :visited  :hover  :active  :target  :not(s)  :focus    伪元素  :before  :after  :first-">
+<meta name="twitter:title" content="living">
 
   
 
@@ -181,22 +178,17 @@
 </div>
 
 
-  <div id="toc" class="toc-article">
-    <strong class="toc-title">Posts List</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#伪类和伪元素"><span class="toc-text">伪类和伪元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见的伪类和伪元素"><span class="toc-text">常见的伪类和伪元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪元素的兼容性"><span class="toc-text">伪元素的兼容性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪元素-before和-after定义"><span class="toc-text">伪元素:before和:after定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪元素-before和-after——-content几个属性用法"><span class="toc-text">伪元素:before和:after——-content几个属性用法</span></a></li></ol>
-  </div>
-
 
 
 <div class="content content-post CENTER">
-   <article id="post-before和-after用法总结" class="article article-type-post" itemprop="blogPost">
+   <article id="page-undefined" class="article article-type-page" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">:before和:after用法总结</h1>
+    <h1 class="post-title">living</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.06.15</span>
+        <span>2017.06.17</span>
       </span>
 
       
@@ -212,7 +204,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/06/15/before和-after用法总结/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//living/index.html#disqus_thread"></a>
         </span>
       
 
@@ -231,91 +223,7 @@
 
   <div class="article-content">
     
-      <h1 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h1><ul>
-<li><p>伪类：向某选择器添加特殊效果</p>
-</li>
-<li><p>伪元素：将特殊效果添加到某选择器</p>
-<pre><code>span:hover//伪类
-span::before//伪元素
-</code></pre></li>
-</ul>
-<p><em>为了兼容性，将伪类和伪元素都写成单冒号</em></p>
-<h1 id="常见的伪类和伪元素"><a href="#常见的伪类和伪元素" class="headerlink" title="常见的伪类和伪元素"></a>常见的伪类和伪元素</h1><ul>
-<li><p>伪类</p>
-<ol>
-<li><p>:link</p>
-</li>
-<li><p>:visited</p>
-</li>
-<li><p>:hover</p>
-</li>
-<li><p>:active</p>
-</li>
-<li><p>:target</p>
-</li>
-<li><p>:not(s)</p>
-</li>
-<li><p>:focus</p>
-</li>
-</ol>
-</li>
-<li><p>伪元素</p>
-<ol>
-<li><p>:before</p>
-</li>
-<li><p>:after</p>
-</li>
-<li><p>:first-letter</p>
-</li>
-<li><p>:first-line</p>
-</li>
-<li><p>:selection</p>
-</li>
-</ol>
-</li>
-</ul>
-<h1 id="伪元素的兼容性"><a href="#伪元素的兼容性" class="headerlink" title="伪元素的兼容性"></a>伪元素的兼容性</h1><ul>
-<li>Chrome 2+,</li>
-<li>Firefox 3.5+ (3.0 had partial support),</li>
-<li>Safari 1.3+,</li>
-<li>Opera 9.2+,</li>
-<li>IE8+ (with some minor bugs),</li>
-<li>几乎所有的移动浏览器。</li>
-</ul>
-<h1 id="伪元素-before和-after定义"><a href="#伪元素-before和-after定义" class="headerlink" title="伪元素:before和:after定义"></a>伪元素:before和:after定义</h1><ul>
-<li><p>：after—-在备选元素后面加入内容</p>
-</li>
-<li><p>：before—-在备选元素前面加入内容</p>
-</li>
-</ul>
-<h1 id="伪元素-before和-after——-content几个属性用法"><a href="#伪元素-before和-after——-content几个属性用法" class="headerlink" title="伪元素:before和:after——-content几个属性用法"></a>伪元素:before和:after——-content几个属性用法</h1><ul>
-<li><p>添加字符串</p>
-<pre><code>a:before{
-    content:&quot;文字&quot;
-}
-</code></pre></li>
-<li><p>添加href属性</p>
-<pre><code>a:before{
-    content: &quot;(&quot;attr(href)&quot;)&quot;
-}
-</code></pre></li>
-</ul>
-<ul>
-<li><p>引用媒体文件</p>
-<pre><code>a:before{
-    content:url(bg.jpg);
-}
-</code></pre></li>
-<li><p>自定义</p>
-<pre><code>a:before{
-    content:attr(data-title);
-}
-</code></pre></li>
-</ul>
-<p>参考资料：<a href="http://segmentfault.com/a/1190000000484493" target="_blank" rel="external">http://segmentfault.com/a/1190000000484493</a></p>
-<p><a href="http://www.w3cplus.com/css3/pseudo-element-roundup.html" target="_blank" rel="external">http://www.w3cplus.com/css3/pseudo-element-roundup.html</a></p>
-<p>本文系转载，原文地址：<a href="http://www.cnblogs.com/cheerful-queen/p/4971484.html" target="_blank" rel="external">:after和:before炫酷用法总结</a></p>
-
+      
     
   </div>
 </article>
@@ -345,10 +253,10 @@ span::before//伪元素
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/06/13/Vue-js-总结/">
+    <a class="hide pull-left" href="/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/06/17/sass-总结/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -462,7 +370,7 @@ span::before//伪元素
 
 
   
-      <div class="fexo-comments comments-post">
+      <div class="fexo-comments comments-page">
     
   <section class="disqus-comments">
     <div id="disqus_thread">
@@ -473,7 +381,7 @@ span::before//伪元素
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/06/15/before和-after用法总结/';
+    var disqus_url = 'https://bobo-33.github.io/living/index.html';
     
     (function(){
       var dsq = document.createElement('script');

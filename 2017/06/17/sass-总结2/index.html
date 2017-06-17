@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>:before和:after用法总结 | flowers</title>
+  <title>sass---总结2 | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,16 +15,16 @@
     <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="伪类和伪元素 伪类：向某选择器添加特殊效果  伪元素：将特殊效果添加到某选择器 span:hover//伪类 span::before//伪元素   为了兼容性，将伪类和伪元素都写成单冒号 常见的伪类和伪元素 伪类  :link  :visited  :hover  :active  :target  :not(s)  :focus    伪元素  :before  :after  :first-">
+  <meta name="description" content="Sass运算加法运算 变量或属性中都可以运算  不同类型单位报错（如ex,em,rem—-相对单位） .width{                 20px+2em; }   减法运算 法则同上  乘法运算 支持多种单位  一个单位有多种值报错 .width{             20px*10px;         }  同一个单位写一个值 .width{     20px*10; }">
 <meta property="og:type" content="article">
-<meta property="og:title" content=":before和:after用法总结">
-<meta property="og:url" content="https://bobo-33.github.io/2017/06/15/before和-after用法总结/index.html">
+<meta property="og:title" content="sass---总结2">
+<meta property="og:url" content="https://bobo-33.github.io/2017/06/17/sass-总结2/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="伪类和伪元素 伪类：向某选择器添加特殊效果  伪元素：将特殊效果添加到某选择器 span:hover//伪类 span::before//伪元素   为了兼容性，将伪类和伪元素都写成单冒号 常见的伪类和伪元素 伪类  :link  :visited  :hover  :active  :target  :not(s)  :focus    伪元素  :before  :after  :first-">
-<meta property="og:updated_time" content="2017-06-15T07:43:26.799Z">
+<meta property="og:description" content="Sass运算加法运算 变量或属性中都可以运算  不同类型单位报错（如ex,em,rem—-相对单位） .width{                 20px+2em; }   减法运算 法则同上  乘法运算 支持多种单位  一个单位有多种值报错 .width{             20px*10px;         }  同一个单位写一个值 .width{     20px*10; }">
+<meta property="og:updated_time" content="2017-06-17T03:00:10.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content=":before和:after用法总结">
-<meta name="twitter:description" content="伪类和伪元素 伪类：向某选择器添加特殊效果  伪元素：将特殊效果添加到某选择器 span:hover//伪类 span::before//伪元素   为了兼容性，将伪类和伪元素都写成单冒号 常见的伪类和伪元素 伪类  :link  :visited  :hover  :active  :target  :not(s)  :focus    伪元素  :before  :after  :first-">
+<meta name="twitter:title" content="sass---总结2">
+<meta name="twitter:description" content="Sass运算加法运算 变量或属性中都可以运算  不同类型单位报错（如ex,em,rem—-相对单位） .width{                 20px+2em; }   减法运算 法则同上  乘法运算 支持多种单位  一个单位有多种值报错 .width{             20px*10px;         }  同一个单位写一个值 .width{     20px*10; }">
 
   
 
@@ -183,20 +183,20 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">Posts List</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#伪类和伪元素"><span class="toc-text">伪类和伪元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常见的伪类和伪元素"><span class="toc-text">常见的伪类和伪元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪元素的兼容性"><span class="toc-text">伪元素的兼容性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪元素-before和-after定义"><span class="toc-text">伪元素:before和:after定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪元素-before和-after——-content几个属性用法"><span class="toc-text">伪元素:before和:after——-content几个属性用法</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Sass运算"><span class="toc-text">Sass运算</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#加法运算"><span class="toc-text">加法运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#减法运算"><span class="toc-text">减法运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#乘法运算"><span class="toc-text">乘法运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#除法运算"><span class="toc-text">除法运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量计算"><span class="toc-text">变量计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数字计算"><span class="toc-text">数字计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#颜色计算"><span class="toc-text">颜色计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符运算"><span class="toc-text">字符运算</span></a></li></ol></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-before和-after用法总结" class="article article-type-post" itemprop="blogPost">
+   <article id="post-sass-总结2" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">:before和:after用法总结</h1>
+    <h1 class="post-title">sass---总结2</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.06.15</span>
+        <span>2017.06.17</span>
       </span>
 
       
@@ -212,7 +212,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/06/15/before和-after用法总结/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//2017/06/17/sass-总结2/#disqus_thread"></a>
         </span>
       
 
@@ -231,91 +231,78 @@
 
   <div class="article-content">
     
-      <h1 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h1><ul>
-<li><p>伪类：向某选择器添加特殊效果</p>
+      <h1 id="Sass运算"><a href="#Sass运算" class="headerlink" title="Sass运算"></a>Sass运算</h1><h2 id="加法运算"><a href="#加法运算" class="headerlink" title="加法运算"></a>加法运算</h2><ul>
+<li><p>变量或属性中都可以运算</p>
 </li>
-<li><p>伪元素：将特殊效果添加到某选择器</p>
-<pre><code>span:hover//伪类
-span::before//伪元素
-</code></pre></li>
-</ul>
-<p><em>为了兼容性，将伪类和伪元素都写成单冒号</em></p>
-<h1 id="常见的伪类和伪元素"><a href="#常见的伪类和伪元素" class="headerlink" title="常见的伪类和伪元素"></a>常见的伪类和伪元素</h1><ul>
-<li><p>伪类</p>
-<ol>
-<li><p>:link</p>
-</li>
-<li><p>:visited</p>
-</li>
-<li><p>:hover</p>
-</li>
-<li><p>:active</p>
-</li>
-<li><p>:target</p>
-</li>
-<li><p>:not(s)</p>
-</li>
-<li><p>:focus</p>
-</li>
-</ol>
-</li>
-<li><p>伪元素</p>
-<ol>
-<li><p>:before</p>
-</li>
-<li><p>:after</p>
-</li>
-<li><p>:first-letter</p>
-</li>
-<li><p>:first-line</p>
-</li>
-<li><p>:selection</p>
-</li>
-</ol>
-</li>
-</ul>
-<h1 id="伪元素的兼容性"><a href="#伪元素的兼容性" class="headerlink" title="伪元素的兼容性"></a>伪元素的兼容性</h1><ul>
-<li>Chrome 2+,</li>
-<li>Firefox 3.5+ (3.0 had partial support),</li>
-<li>Safari 1.3+,</li>
-<li>Opera 9.2+,</li>
-<li>IE8+ (with some minor bugs),</li>
-<li>几乎所有的移动浏览器。</li>
-</ul>
-<h1 id="伪元素-before和-after定义"><a href="#伪元素-before和-after定义" class="headerlink" title="伪元素:before和:after定义"></a>伪元素:before和:after定义</h1><ul>
-<li><p>：after—-在备选元素后面加入内容</p>
-</li>
-<li><p>：before—-在备选元素前面加入内容</p>
-</li>
-</ul>
-<h1 id="伪元素-before和-after——-content几个属性用法"><a href="#伪元素-before和-after——-content几个属性用法" class="headerlink" title="伪元素:before和:after——-content几个属性用法"></a>伪元素:before和:after——-content几个属性用法</h1><ul>
-<li><p>添加字符串</p>
-<pre><code>a:before{
-    content:&quot;文字&quot;
+<li><p>不同类型单位报错（如ex,em,rem—-相对单位）</p>
+<pre><code>.width{            
+    20px+2em;
 }
 </code></pre></li>
-<li><p>添加href属性</p>
-<pre><code>a:before{
-    content: &quot;(&quot;attr(href)&quot;)&quot;
+</ul>
+<h2 id="减法运算"><a href="#减法运算" class="headerlink" title="减法运算"></a>减法运算</h2><ul>
+<li>法则同上</li>
+</ul>
+<h2 id="乘法运算"><a href="#乘法运算" class="headerlink" title="乘法运算"></a>乘法运算</h2><ul>
+<li><p>支持多种单位</p>
+</li>
+<li><p>一个单位有多种值报错</p>
+<pre><code>.width{        
+    20px*10px;    
+    }
+</code></pre></li>
+<li><p>同一个单位写一个值</p>
+<pre><code>.width{
+    20px*10;
 }
 </code></pre></li>
 </ul>
 <ul>
-<li><p>引用媒体文件</p>
-<pre><code>a:before{
-    content:url(bg.jpg);
-}
-</code></pre></li>
-<li><p>自定义</p>
-<pre><code>a:before{
-    content:attr(data-title);
+<li><p>不同类型单位报错</p>
+<pre><code>.width{
+    20px*2em;
 }
 </code></pre></li>
 </ul>
-<p>参考资料：<a href="http://segmentfault.com/a/1190000000484493" target="_blank" rel="external">http://segmentfault.com/a/1190000000484493</a></p>
-<p><a href="http://www.w3cplus.com/css3/pseudo-element-roundup.html" target="_blank" rel="external">http://www.w3cplus.com/css3/pseudo-element-roundup.html</a></p>
-<p>本文系转载，原文地址：<a href="http://www.cnblogs.com/cheerful-queen/p/4971484.html" target="_blank" rel="external">:after和:before炫酷用法总结</a></p>
+<h2 id="除法运算"><a href="#除法运算" class="headerlink" title="除法运算"></a>除法运算</h2><ul>
+<li><p>法则同乘法</p>
+</li>
+<li><p>单独使用“/”将不会生效，应该加上“（）”</p>
+<pre><code>.width{
+    (960px / 10);
+}
+</code></pre></li>
+<li><p>当除法是数学表达式中的一部分，不加“（）”也会生效</p>
+<pre><code>.width{
+    960px / 10+10;
+}
+</code></pre></li>
+</ul>
+<h2 id="变量计算"><a href="#变量计算" class="headerlink" title="变量计算"></a>变量计算</h2><p>计算列宽：</p>
+<pre><code>$col-width: 60px;
+$col-gap: 20px;
 
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width:$col-width*$i+$col-gap*($i-1);
+    }
+}
+</code></pre><h2 id="数字计算"><a href="#数字计算" class="headerlink" title="数字计算"></a>数字计算</h2><ul>
+<li><p>数字运算包括前面介绍的：加法、减法、乘法和除法等运算。而且还可以通过括号来修改他们的运算先后顺序。</p>
+<pre><code>.box {
+  width: ((220px + 720px) - 11 * 20 ) / 12 ;  
+}
+</code></pre></li>
+</ul>
+<h2 id="颜色计算"><a href="#颜色计算" class="headerlink" title="颜色计算"></a>颜色计算</h2><pre><code>p {
+  color: #010203 + #040506;
+}
+</code></pre><h2 id="字符运算"><a href="#字符运算" class="headerlink" title="字符运算"></a>字符运算</h2><p>通过“+”链接</p>
+<pre><code>$content: &quot;Hello&quot; + &quot;&quot; + &quot;Sass!&quot;;
+    .box:before {
+      content: &quot; #{$content} &quot;;
+    }
+</code></pre>
     
   </div>
 </article>
@@ -345,10 +332,10 @@ span::before//伪元素
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/06/13/Vue-js-总结/">
+    <a class="show pull-left" href="/2017/06/17/sass-总结/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/06/17/sass-总结/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -473,7 +460,7 @@ span::before//伪元素
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/06/15/before和-after用法总结/';
+    var disqus_url = 'https://bobo-33.github.io/2017/06/17/sass-总结2/';
     
     (function(){
       var dsq = document.createElement('script');
