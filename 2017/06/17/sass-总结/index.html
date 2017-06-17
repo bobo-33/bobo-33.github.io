@@ -15,16 +15,16 @@
     <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
   
 
-  <meta name="description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。  sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；  scss语法与普通css一致（使用了sass新语法规则）  安装 安装ruby （ruby -v---安装成功）  安装s">
+  <meta name="description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。   sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；   scss语法与普通css一致（使用了sass新语法规则）安装 安装ruby （ruby -v—安装成功）  安装sass">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sass---总结">
 <meta property="og:url" content="https://bobo-33.github.io/2017/06/17/sass-总结/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。  sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；  scss语法与普通css一致（使用了sass新语法规则）  安装 安装ruby （ruby -v---安装成功）  安装s">
-<meta property="og:updated_time" content="2017-06-17T02:05:47.056Z">
+<meta property="og:description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。   sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；   scss语法与普通css一致（使用了sass新语法规则）安装 安装ruby （ruby -v—安装成功）  安装sass">
+<meta property="og:updated_time" content="2017-06-17T07:57:33.986Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sass---总结">
-<meta name="twitter:description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。  sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；  scss语法与普通css一致（使用了sass新语法规则）  安装 安装ruby （ruby -v---安装成功）  安装s">
+<meta name="twitter:description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。   sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；   scss语法与普通css一致（使用了sass新语法规则）安装 安装ruby （ruby -v—安装成功）  安装sass">
 
   
 
@@ -181,6 +181,11 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">Posts List</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#css预处理器简介"><span class="toc-text">css预处理器简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass特点（只能使用sass老语法规则）"><span class="toc-text">sass特点（只能使用sass老语法规则）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scss语法与普通css一致（使用了sass新语法规则）"><span class="toc-text">scss语法与普通css一致（使用了sass新语法规则）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用sass"><span class="toc-text">引用sass</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass不同样式风格输出"><span class="toc-text">sass不同样式风格输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass声明变量"><span class="toc-text">sass声明变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#语法"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#混合宏"><span class="toc-text">混合宏</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
@@ -226,53 +231,52 @@
 
   <div class="article-content">
     
-      <ul>
-<li><p>css预处理器简介</p>
-<pre><code>css预处理器为css增加编程特性，无需考虑浏览器兼容性。
-
-css预处理器语言更加简洁，可读性强，适应性强，易于维护。
-</code></pre></li>
-<li><p>sass特点（只能使用sass老语法规则）</p>
-<pre><code>用更简洁的语法清晰，结构化描述样式。
-
-用ruby语言
-
-缩进式语法
-
-不带{}和；
-</code></pre></li>
-<li><p>scss语法与普通css一致（使用了sass新语法规则）</p>
+      <h2 id="css预处理器简介"><a href="#css预处理器简介" class="headerlink" title="css预处理器简介"></a>css预处理器简介</h2><ul>
+<li><p>css预处理器为css增加编程特性，无需考虑浏览器兼容性。</p>
 </li>
-<li><p>安装</p>
-<pre><code>安装ruby （ruby -v---安装成功）
-
-安装sass  （gem install sass，升级sass版本gem update sass，查看sass版本sass -v）
-</code></pre></li>
-<li><p>引用sass</p>
-<pre><code>先写sass文件
-
-命令行编译：sass --watch &lt;要编译的Sass文件路径&gt;/style.scss:&lt;要输出CSS文件路径&gt;/style.css
-
-用watch本地文件一旦发生变化，css就会改变
-</code></pre></li>
-<li><p>sass不同样式风格输出</p>
-<pre><code>1. 嵌套输出方式 nested
-
-2. 展开输出方式 expanded  
-
-3. 紧凑输出方式 compact 
-
-4. 压缩输出方式 compressed
-</code></pre></li>
-<li><p>sass声明变量</p>
-<pre><code>组成：（1）声明变量符$;（2）变量名称；（3）变量值
-
-如：
-
-    $color: red;
-</code></pre></li>
-<li><p>语法</p>
-<ol>
+<li><p>css预处理器语言更加简洁，可读性强，适应性强，易于维护。</p>
+</li>
+</ul>
+<h2 id="sass特点（只能使用sass老语法规则）"><a href="#sass特点（只能使用sass老语法规则）" class="headerlink" title="sass特点（只能使用sass老语法规则）"></a>sass特点（只能使用sass老语法规则）</h2><ul>
+<li><p>用更简洁的语法清晰，结构化描述样式。</p>
+</li>
+<li><p>用ruby语言</p>
+</li>
+<li><p>缩进式语法</p>
+</li>
+<li><p>不带{}和；</p>
+</li>
+</ul>
+<h2 id="scss语法与普通css一致（使用了sass新语法规则）"><a href="#scss语法与普通css一致（使用了sass新语法规则）" class="headerlink" title="scss语法与普通css一致（使用了sass新语法规则）"></a>scss语法与普通css一致（使用了sass新语法规则）</h2><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li><p>安装ruby （ruby -v—安装成功）</p>
+</li>
+<li><p>安装sass  （gem install sass，升级sass版本gem update sass，查看sass版本sass -v）</p>
+</li>
+</ul>
+<h2 id="引用sass"><a href="#引用sass" class="headerlink" title="引用sass"></a>引用sass</h2><ul>
+<li><p>先写sass文件</p>
+</li>
+<li><p>命令行编译：sass –watch &lt;要编译的Sass文件路径&gt;/style.scss:&lt;要输出CSS文件路径&gt;/style.css</p>
+</li>
+<li><p>用watch本地文件一旦发生变化，css就会改变</p>
+</li>
+</ul>
+<h2 id="sass不同样式风格输出"><a href="#sass不同样式风格输出" class="headerlink" title="sass不同样式风格输出"></a>sass不同样式风格输出</h2><ul>
+<li><p>嵌套输出方式 nested</p>
+</li>
+<li><p>展开输出方式 expanded  </p>
+</li>
+<li><p>紧凑输出方式 compact </p>
+</li>
+<li><p>压缩输出方式 compressed</p>
+</li>
+</ul>
+<h2 id="sass声明变量"><a href="#sass声明变量" class="headerlink" title="sass声明变量"></a>sass声明变量</h2><ul>
+<li>组成：（1）声明变量符$;（2）变量名称；（3）变量值</li>
+</ul>
+<p>如：</p>
+<pre><code>$color: red;
+</code></pre><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ol>
 <li><p>！default—默认声明</p>
 </li>
 <li><p>嵌套</p>
@@ -301,23 +305,18 @@ css预处理器语言更加简洁，可读性强，适应性强，易于维护�
 }
 </code></pre></li>
 </ol>
-</li>
-</ul>
-<ul>
-<li><p>混合宏</p>
-<pre><code>声明：
-
-        @mixin border-radius{
-            -webkit-border-radius: 3px;
-            border-radius: 3px;
-        }
-
-调用：
-
-        button {
-            @include border-radius;
-        }
-</code></pre><ol>
+<h2 id="混合宏"><a href="#混合宏" class="headerlink" title="混合宏"></a>混合宏</h2><ul>
+<li><p>声明：</p>
+<pre><code>@mixin border-radius{
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+</code></pre></li>
+<li><p>调用：</p>
+<pre><code>button {
+    @include border-radius;
+}
+</code></pre></li>
 <li><p>混合宏变量（不带值）</p>
 <pre><code>@mixin border-radius($radius){
   -webkit-border-radius: $radius;
@@ -349,8 +348,10 @@ css预处理器语言更加简洁，可读性强，适应性强，易于维护�
 }
 </code></pre></li>
 <li><p>混合宏的缺点</p>
-<p> 容易产生冗余代码</p>
 </li>
+</ul>
+<p>容易产生冗余代码</p>
+<ul>
 <li><p>继承</p>
 <pre><code>.btn {
   border: 1px solid #ccc;
@@ -374,23 +375,18 @@ css预处理器语言更加简洁，可读性强，适应性强，易于维护�
 }
 </code></pre></li>
 <li><p>数据类型</p>
-<ul>
-<li><p>数字: 如，1、 2、 13、 10px；</p>
-</li>
-<li><p>字符串：有引号字符串或无引号字符串，如，”foo”、 ‘bar’、 baz；</p>
-</li>
-<li><p>颜色：如，blue、 #04a3f9、 rgba(255,0,0,0.5)；</p>
-</li>
-<li><p>布尔型：如，true、 false；</p>
-</li>
-<li><p>空值：如，null；</p>
-</li>
-<li><p>值列表：用空格或者逗号分开，如，1.5em 1em 0 2em 、 Helvetica, Arial, sans-serif。</p>
-</li>
-</ul>
-</li>
-</ol>
-</li>
+<pre><code>1. 数字: 如，1、 2、 13、 10px；
+
+2. 字符串：有引号字符串或无引号字符串，如，&quot;foo&quot;、 &apos;bar&apos;、 baz；
+
+3. 颜色：如，blue、 #04a3f9、 rgba(255,0,0,0.5)；
+
+4. 布尔型：如，true、 false；
+
+5. 空值：如，null；
+
+6. 值列表：用空格或者逗号分开，如，1.5em 1em 0 2em 、 Helvetica, Arial, sans-serif。
+</code></pre></li>
 </ul>
 
     
