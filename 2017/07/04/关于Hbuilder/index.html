@@ -7,25 +7,34 @@
 <head>
   <meta charset="utf-8">
   
-  <title>sass---总结 | flowers</title>
+  <title>关于Hbuilder | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="programming," />
+    <meta name="keywords" content="编译器," />
   
 
-  <meta name="description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。   sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；   scss语法与普通css一致（使用了sass新语法规则）安装 安装ruby （ruby -v—安装成功）  安装sass">
-<meta name="keywords" content="programming">
+  <meta name="description" content="#利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 ###打开HBuilder开发工具1）在">
+<meta name="keywords" content="编译器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sass---总结">
-<meta property="og:url" content="https://bobo-33.github.io/2017/06/17/sass-总结/index.html">
+<meta property="og:title" content="关于Hbuilder">
+<meta property="og:url" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。   sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；   scss语法与普通css一致（使用了sass新语法规则）安装 安装ruby （ruby -v—安装成功）  安装sass">
-<meta property="og:updated_time" content="2017-06-17T08:13:38.290Z">
+<meta property="og:description" content="#利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 ###打开HBuilder开发工具1）在">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/3.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/4.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/5.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/6.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/7.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/8.png">
+<meta property="og:updated_time" content="2017-07-04T01:56:33.602Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sass---总结">
-<meta name="twitter:description" content="css预处理器简介 css预处理器为css增加编程特性，无需考虑浏览器兼容性。  css预处理器语言更加简洁，可读性强，适应性强，易于维护。   sass特点（只能使用sass老语法规则） 用更简洁的语法清晰，结构化描述样式。  用ruby语言  缩进式语法  不带{}和；   scss语法与普通css一致（使用了sass新语法规则）安装 安装ruby （ruby -v—安装成功）  安装sass">
+<meta name="twitter:title" content="关于Hbuilder">
+<meta name="twitter:description" content="#利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 ###打开HBuilder开发工具1）在">
+<meta name="twitter:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/1.png">
 
   
 
@@ -182,22 +191,17 @@
 </div>
 
 
-  <div id="toc" class="toc-article">
-    <strong class="toc-title">Posts List</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#css预处理器简介"><span class="toc-text">css预处理器简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass特点（只能使用sass老语法规则）"><span class="toc-text">sass特点（只能使用sass老语法规则）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scss语法与普通css一致（使用了sass新语法规则）"><span class="toc-text">scss语法与普通css一致（使用了sass新语法规则）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用sass"><span class="toc-text">引用sass</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass不同样式风格输出"><span class="toc-text">sass不同样式风格输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass声明变量"><span class="toc-text">sass声明变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#语法"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#混合宏"><span class="toc-text">混合宏</span></a></li></ol>
-  </div>
-
 
 
 <div class="content content-post CENTER">
-   <article id="post-sass-总结" class="article article-type-post" itemprop="blogPost">
+   <article id="post-关于Hbuilder" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">sass---总结</h1>
+    <h1 class="post-title">关于Hbuilder</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.06.17</span>
+        <span>2017.07.04</span>
       </span>
 
       
@@ -208,17 +212,12 @@
       
 
       
-  <span class="article-category">
-    <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </span>
-
 
 
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/06/17/sass-总结/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//2017/07/04/关于Hbuilder/#disqus_thread"></a>
         </span>
       
 
@@ -237,163 +236,17 @@
 
   <div class="article-content">
     
-      <h2 id="css预处理器简介"><a href="#css预处理器简介" class="headerlink" title="css预处理器简介"></a>css预处理器简介</h2><ul>
-<li><p>css预处理器为css增加编程特性，无需考虑浏览器兼容性。</p>
-</li>
-<li><p>css预处理器语言更加简洁，可读性强，适应性强，易于维护。</p>
-</li>
-</ul>
-<h2 id="sass特点（只能使用sass老语法规则）"><a href="#sass特点（只能使用sass老语法规则）" class="headerlink" title="sass特点（只能使用sass老语法规则）"></a>sass特点（只能使用sass老语法规则）</h2><ul>
-<li><p>用更简洁的语法清晰，结构化描述样式。</p>
-</li>
-<li><p>用ruby语言</p>
-</li>
-<li><p>缩进式语法</p>
-</li>
-<li><p>不带{}和；</p>
-</li>
-</ul>
-<h2 id="scss语法与普通css一致（使用了sass新语法规则）"><a href="#scss语法与普通css一致（使用了sass新语法规则）" class="headerlink" title="scss语法与普通css一致（使用了sass新语法规则）"></a>scss语法与普通css一致（使用了sass新语法规则）</h2><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
-<li><p>安装ruby （ruby -v—安装成功）</p>
-</li>
-<li><p>安装sass  （gem install sass，升级sass版本gem update sass，查看sass版本sass -v）</p>
-</li>
-</ul>
-<h2 id="引用sass"><a href="#引用sass" class="headerlink" title="引用sass"></a>引用sass</h2><ul>
-<li><p>先写sass文件</p>
-</li>
-<li><p>命令行编译：sass –watch &lt;要编译的Sass文件路径&gt;/style.scss:&lt;要输出CSS文件路径&gt;/style.css</p>
-</li>
-<li><p>用watch本地文件一旦发生变化，css就会改变</p>
-</li>
-</ul>
-<h2 id="sass不同样式风格输出"><a href="#sass不同样式风格输出" class="headerlink" title="sass不同样式风格输出"></a>sass不同样式风格输出</h2><ul>
-<li><p>嵌套输出方式 nested</p>
-</li>
-<li><p>展开输出方式 expanded  </p>
-</li>
-<li><p>紧凑输出方式 compact </p>
-</li>
-<li><p>压缩输出方式 compressed</p>
-</li>
-</ul>
-<h2 id="sass声明变量"><a href="#sass声明变量" class="headerlink" title="sass声明变量"></a>sass声明变量</h2><ul>
-<li>组成：（1）声明变量符$;（2）变量名称；（3）变量值</li>
-</ul>
-<p>如：</p>
-<pre><code>$color: red;
-</code></pre><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ol>
-<li><p>！default—默认声明</p>
-</li>
-<li><p>嵌套</p>
-<p> 选择器嵌套：</p>
-<pre><code>nav {
-  a {
-    color: red;
-
-    header &amp; {
-      color:green;
-    }
-  }  
-}
-</code></pre><p> 属性嵌套</p>
-<pre><code>.box {
-  border: {
-   top: 1px solid red;
-   bottom: 1px solid green;
-  }
-}
-</code></pre><p> 伪类嵌套</p>
-<pre><code>.box{
-  &amp;:before {
-    content:&quot;伪元素嵌套&quot;;
-  }
-}
-</code></pre></li>
-</ol>
-<h2 id="混合宏"><a href="#混合宏" class="headerlink" title="混合宏"></a>混合宏</h2><ul>
-<li><p>声明：</p>
-<pre><code>@mixin border-radius{
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-</code></pre></li>
-<li><p>调用：</p>
-<pre><code>button {
-    @include border-radius;
-}
-</code></pre></li>
-<li><p>混合宏变量（不带值）</p>
-<pre><code>@mixin border-radius($radius){
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-}
-
-.box {
-  @include border-radius(3px);
-}
-</code></pre></li>
-<li><p>混合宏变量（带值）</p>
-<pre><code>@mixin border-radius($radius:3px){
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-}
-
-.box {
-  @include border-radius;
-}
-</code></pre></li>
-<li><p>混合宏多个参数（不带值）</p>
-<pre><code>@mixin size($width,$height){
-  width: $width;
-  height: $height;
-}
-
-.box-center {
-  @include size(500px,300px);
-}
-</code></pre></li>
-<li><p>混合宏的缺点</p>
-</li>
-</ul>
-<p>容易产生冗余代码</p>
-<ul>
-<li><p>继承</p>
-<pre><code>.btn {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-  font-size: 14px;
-}
-
-.btn-primary {
-  background-color: #f36;
-  color: #fff;
-  @extend .btn;
-}
-</code></pre></li>
-<li><p>占位符—%（当不调用时不显示不产生冗余代码）</p>
-<pre><code>%mt5 {
-  margin-top: 5px;
-}
-
-.btn {
-  @extend %mt5;
-}
-</code></pre></li>
-<li><p>数据类型</p>
-<pre><code>1. 数字: 如，1、 2、 13、 10px；
-
-2. 字符串：有引号字符串或无引号字符串，如，&quot;foo&quot;、 &apos;bar&apos;、 baz；
-
-3. 颜色：如，blue、 #04a3f9、 rgba(255,0,0,0.5)；
-
-4. 布尔型：如，true、 false；
-
-5. 空值：如，null；
-
-6. 值列表：用空格或者逗号分开，如，1.5em 1em 0 2em 、 Helvetica, Arial, sans-serif。
-</code></pre></li>
-</ul>
+      <p>#利用HBuilder设置外部web服务器来测试移动web<br>通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。</p>
+<p>###打开HBuilder开发工具<br>1）在工具的右上角可以更改开发视图模式选择“边改边看模式”</p>
+<p>2）HBuilder将会展开一个自带的Web浏览器，可以点击一个齿轮按钮旁的倒三角展开列表</p>
+<p>3）选择列表最下面“设置web服务器”<br><img src="/2017/07/04/关于Hbuilder/1.png" alt="演示1"></p>
+<p>###在“设置web服务器界面”中<br>1）依次展开左边栏的列表“HBuilder”——&gt;“Web服务器”——&gt;选择“外置Web服务器”</p>
+<p>2）然后在右边栏点击“新建”编辑Web服务器配置<br><img src="/2017/07/04/关于Hbuilder/2.png" alt="演示1"><br>3）编辑Web服务器配置界面，“名称”可以随意改，关键是“浏览器运行URL”应该填写你的本机ip地址<br><img src="/2017/07/04/关于Hbuilder/3.png" alt="演示1"></p>
+<p>###查看本机的ip地址并填写到“浏览器运行URL”<br>1）Windows打开控制面板的“网络和共享中心”去查看本机ip地址，Mac系统查看ip地址参考（<a href="http://jingyan.baidu.com/arti...）" target="_blank" rel="external">http://jingyan.baidu.com/arti...）</a></p>
+<p>2）例如：小编的地址是192.168.0.122<br><img src="/2017/07/04/关于Hbuilder/4.png" alt="演示1"><br>3）填写到Web服务器配置中的“浏览器运行URL”，特别提醒注意填写的ip地址后加上HBuilder使用的端口号8020<br><img src="/2017/07/04/关于Hbuilder/5.png" alt="演示1"><br>4）然后点击确定，配置好一个web服务器<br><img src="/2017/07/04/关于Hbuilder/6.png" alt="演示1">（配置完毕）<br>5）选择使用刚刚新建的myWeb外部服务器<br><img src="/2017/07/04/关于Hbuilder/7.png" alt="演示1"><br>（选择myWeb）</p>
+<p>###扫码测试<br>1）使用HBuilder打开项目的HTML文件</p>
+<p>2）点击“Web服务器”中有个二维码的按钮，展开大图的二维码，可以直接使用真实机来扫码测试</p>
+<p>3）注意扫码测试，你的真实机和电脑需要在同一个局域网下<br><img src="/2017/07/04/关于Hbuilder/8.png" alt="演示1"><br>（使用手机扫二维码）</p>
 
     
   </div>
@@ -424,10 +277,10 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/06/15/before和-after用法总结/">
+    <a class="show pull-left" href="/2017/06/17/hexo插入图片/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/06/17/sass-总结2/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -552,7 +405,7 @@
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/06/17/sass-总结/';
+    var disqus_url = 'https://bobo-33.github.io/2017/07/04/关于Hbuilder/';
     
     (function(){
       var dsq = document.createElement('script');
