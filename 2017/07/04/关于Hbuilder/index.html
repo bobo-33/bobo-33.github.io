@@ -15,13 +15,13 @@
     <meta name="keywords" content="编译器," />
   
 
-  <meta name="description" content="#利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 ###打开HBuilder开发工具1）在">
+  <meta name="description" content="利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 打开HBuilder开发工具1）在工具的右">
 <meta name="keywords" content="编译器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于Hbuilder">
 <meta property="og:url" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="#利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 ###打开HBuilder开发工具1）在">
+<meta property="og:description" content="利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 打开HBuilder开发工具1）在工具的右">
 <meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/1.png">
 <meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/2.png">
 <meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/3.png">
@@ -30,10 +30,10 @@
 <meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/6.png">
 <meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/7.png">
 <meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/8.png">
-<meta property="og:updated_time" content="2017-07-04T01:56:33.602Z">
+<meta property="og:updated_time" content="2017-07-04T02:03:37.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于Hbuilder">
-<meta name="twitter:description" content="#利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 ###打开HBuilder开发工具1）在">
+<meta name="twitter:description" content="利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 打开HBuilder开发工具1）在工具的右">
 <meta name="twitter:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/1.png">
 
   
@@ -191,6 +191,11 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#利用HBuilder设置外部web服务器来测试移动web"><span class="toc-text">利用HBuilder设置外部web服务器来测试移动web</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#打开HBuilder开发工具"><span class="toc-text">打开HBuilder开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在“设置web服务器界面”中"><span class="toc-text">在“设置web服务器界面”中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看本机的ip地址并填写到“浏览器运行URL”"><span class="toc-text">查看本机的ip地址并填写到“浏览器运行URL”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扫码测试"><span class="toc-text">扫码测试</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
@@ -236,15 +241,15 @@
 
   <div class="article-content">
     
-      <p>#利用HBuilder设置外部web服务器来测试移动web<br>通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。</p>
-<p>###打开HBuilder开发工具<br>1）在工具的右上角可以更改开发视图模式选择“边改边看模式”</p>
+      <h2 id="利用HBuilder设置外部web服务器来测试移动web"><a href="#利用HBuilder设置外部web服务器来测试移动web" class="headerlink" title="利用HBuilder设置外部web服务器来测试移动web"></a>利用HBuilder设置外部web服务器来测试移动web</h2><p>通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。</p>
+<h2 id="打开HBuilder开发工具"><a href="#打开HBuilder开发工具" class="headerlink" title="打开HBuilder开发工具"></a>打开HBuilder开发工具</h2><p>1）在工具的右上角可以更改开发视图模式选择“边改边看模式”</p>
 <p>2）HBuilder将会展开一个自带的Web浏览器，可以点击一个齿轮按钮旁的倒三角展开列表</p>
 <p>3）选择列表最下面“设置web服务器”<br><img src="/2017/07/04/关于Hbuilder/1.png" alt="演示1"></p>
-<p>###在“设置web服务器界面”中<br>1）依次展开左边栏的列表“HBuilder”——&gt;“Web服务器”——&gt;选择“外置Web服务器”</p>
+<h2 id="在“设置web服务器界面”中"><a href="#在“设置web服务器界面”中" class="headerlink" title="在“设置web服务器界面”中"></a>在“设置web服务器界面”中</h2><p>1）依次展开左边栏的列表“HBuilder”——&gt;“Web服务器”——&gt;选择“外置Web服务器”</p>
 <p>2）然后在右边栏点击“新建”编辑Web服务器配置<br><img src="/2017/07/04/关于Hbuilder/2.png" alt="演示1"><br>3）编辑Web服务器配置界面，“名称”可以随意改，关键是“浏览器运行URL”应该填写你的本机ip地址<br><img src="/2017/07/04/关于Hbuilder/3.png" alt="演示1"></p>
-<p>###查看本机的ip地址并填写到“浏览器运行URL”<br>1）Windows打开控制面板的“网络和共享中心”去查看本机ip地址，Mac系统查看ip地址参考（<a href="http://jingyan.baidu.com/arti...）" target="_blank" rel="external">http://jingyan.baidu.com/arti...）</a></p>
+<h2 id="查看本机的ip地址并填写到“浏览器运行URL”"><a href="#查看本机的ip地址并填写到“浏览器运行URL”" class="headerlink" title="查看本机的ip地址并填写到“浏览器运行URL”"></a>查看本机的ip地址并填写到“浏览器运行URL”</h2><p>1）Windows打开控制面板的“网络和共享中心”去查看本机ip地址，Mac系统查看ip地址参考（<a href="http://jingyan.baidu.com/arti...）" target="_blank" rel="external">http://jingyan.baidu.com/arti...）</a></p>
 <p>2）例如：小编的地址是192.168.0.122<br><img src="/2017/07/04/关于Hbuilder/4.png" alt="演示1"><br>3）填写到Web服务器配置中的“浏览器运行URL”，特别提醒注意填写的ip地址后加上HBuilder使用的端口号8020<br><img src="/2017/07/04/关于Hbuilder/5.png" alt="演示1"><br>4）然后点击确定，配置好一个web服务器<br><img src="/2017/07/04/关于Hbuilder/6.png" alt="演示1">（配置完毕）<br>5）选择使用刚刚新建的myWeb外部服务器<br><img src="/2017/07/04/关于Hbuilder/7.png" alt="演示1"><br>（选择myWeb）</p>
-<p>###扫码测试<br>1）使用HBuilder打开项目的HTML文件</p>
+<h2 id="扫码测试"><a href="#扫码测试" class="headerlink" title="扫码测试"></a>扫码测试</h2><p>1）使用HBuilder打开项目的HTML文件</p>
 <p>2）点击“Web服务器”中有个二维码的按钮，展开大图的二维码，可以直接使用真实机来扫码测试</p>
 <p>3）注意扫码测试，你的真实机和电脑需要在同一个局域网下<br><img src="/2017/07/04/关于Hbuilder/8.png" alt="演示1"><br>（使用手机扫二维码）</p>
 
@@ -302,7 +307,7 @@
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">Close</span>
+      <span id="close" class="btn-close">关闭</span>
     </div>
     <hr>
     <div class="modal-body">
