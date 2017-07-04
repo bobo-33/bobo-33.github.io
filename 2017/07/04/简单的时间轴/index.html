@@ -7,34 +7,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于Hbuilder | flowers</title>
+  <title>简单的时间轴 | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="编译器," />
+    <meta name="keywords" content="demo," />
   
 
-  <meta name="description" content="利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 打开HBuilder开发工具1）在工具的右">
-<meta name="keywords" content="编译器">
+  <meta name="description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
+<meta name="keywords" content="demo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于Hbuilder">
-<meta property="og:url" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/index.html">
+<meta property="og:title" content="简单的时间轴">
+<meta property="og:url" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 打开HBuilder开发工具1）在工具的右">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/1.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/2.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/3.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/4.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/5.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/6.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/7.png">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/8.png">
-<meta property="og:updated_time" content="2017-07-04T02:03:37.917Z">
+<meta property="og:description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/1.png">
+<meta property="og:updated_time" content="2017-07-04T03:08:20.409Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于Hbuilder">
-<meta name="twitter:description" content="利用HBuilder设置外部web服务器来测试移动web通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。 打开HBuilder开发工具1）在工具的右">
-<meta name="twitter:image" content="https://bobo-33.github.io/2017/07/04/关于Hbuilder/1.png">
+<meta name="twitter:title" content="简单的时间轴">
+<meta name="twitter:description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
+<meta name="twitter:image" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/1.png">
 
   
 
@@ -193,15 +186,15 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#利用HBuilder设置外部web服务器来测试移动web"><span class="toc-text">利用HBuilder设置外部web服务器来测试移动web</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#打开HBuilder开发工具"><span class="toc-text">打开HBuilder开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在“设置web服务器界面”中"><span class="toc-text">在“设置web服务器界面”中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看本机的ip地址并填写到“浏览器运行URL”"><span class="toc-text">查看本机的ip地址并填写到“浏览器运行URL”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扫码测试"><span class="toc-text">扫码测试</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#style"><span class="toc-text">style</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html"><span class="toc-text">html</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript"><span class="toc-text">javascript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#效果预览"><span class="toc-text">效果预览</span></a></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-关于Hbuilder" class="article article-type-post" itemprop="blogPost">
+   <article id="post-简单的时间轴" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">关于Hbuilder</h1>
+    <h1 class="post-title">简单的时间轴</h1>
 
     <div class="article-meta">
       <span>
@@ -222,7 +215,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/07/04/关于Hbuilder/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//2017/07/04/简单的时间轴/#disqus_thread"></a>
         </span>
       
 
@@ -241,17 +234,86 @@
 
   <div class="article-content">
     
-      <h2 id="利用HBuilder设置外部web服务器来测试移动web"><a href="#利用HBuilder设置外部web服务器来测试移动web" class="headerlink" title="利用HBuilder设置外部web服务器来测试移动web"></a>利用HBuilder设置外部web服务器来测试移动web</h2><p>通常我们开发移动web都可以直接通过在chrome浏览器中，模拟相关移动设备来测试页面效果，但为了更加接近真实机测试效果，我们也可以部署服务器来使用真实机访问页面测试。本篇讲解如何使用HBuilder快速设置一个外部web服务器，然后可以直接使用真实机去扫描HBuilder中的二维码来访问测试页面。</p>
-<h2 id="打开HBuilder开发工具"><a href="#打开HBuilder开发工具" class="headerlink" title="打开HBuilder开发工具"></a>打开HBuilder开发工具</h2><p>1）在工具的右上角可以更改开发视图模式选择“边改边看模式”</p>
-<p>2）HBuilder将会展开一个自带的Web浏览器，可以点击一个齿轮按钮旁的倒三角展开列表</p>
-<p>3）选择列表最下面“设置web服务器”<br><img src="/2017/07/04/关于Hbuilder/1.png" alt="演示1"></p>
-<h2 id="在“设置web服务器界面”中"><a href="#在“设置web服务器界面”中" class="headerlink" title="在“设置web服务器界面”中"></a>在“设置web服务器界面”中</h2><p>1）依次展开左边栏的列表“HBuilder”——&gt;“Web服务器”——&gt;选择“外置Web服务器”</p>
-<p>2）然后在右边栏点击“新建”编辑Web服务器配置<br><img src="/2017/07/04/关于Hbuilder/2.png" alt="演示1"><br>3）编辑Web服务器配置界面，“名称”可以随意改，关键是“浏览器运行URL”应该填写你的本机ip地址<br><img src="/2017/07/04/关于Hbuilder/3.png" alt="演示1"></p>
-<h2 id="查看本机的ip地址并填写到“浏览器运行URL”"><a href="#查看本机的ip地址并填写到“浏览器运行URL”" class="headerlink" title="查看本机的ip地址并填写到“浏览器运行URL”"></a>查看本机的ip地址并填写到“浏览器运行URL”</h2><p>1）Windows打开控制面板的“网络和共享中心”去查看本机ip地址，Mac系统查看ip地址参考（<a href="http://jingyan.baidu.com/arti...）" target="_blank" rel="external">http://jingyan.baidu.com/arti...）</a></p>
-<p>2）例如：小编的地址是192.168.0.122<br><img src="/2017/07/04/关于Hbuilder/4.png" alt="演示1"><br>3）填写到Web服务器配置中的“浏览器运行URL”，特别提醒注意填写的ip地址后加上HBuilder使用的端口号8020<br><img src="/2017/07/04/关于Hbuilder/5.png" alt="演示1"><br>4）然后点击确定，配置好一个web服务器<br><img src="/2017/07/04/关于Hbuilder/6.png" alt="演示1">（配置完毕）<br>5）选择使用刚刚新建的myWeb外部服务器<br><img src="/2017/07/04/关于Hbuilder/7.png" alt="演示1"><br>（选择myWeb）</p>
-<h2 id="扫码测试"><a href="#扫码测试" class="headerlink" title="扫码测试"></a>扫码测试</h2><p>1）使用HBuilder打开项目的HTML文件</p>
-<p>2）点击“Web服务器”中有个二维码的按钮，展开大图的二维码，可以直接使用真实机来扫码测试</p>
-<p>3）注意扫码测试，你的真实机和电脑需要在同一个局域网下<br><img src="/2017/07/04/关于Hbuilder/8.png" alt="演示1"><br>（使用手机扫二维码）</p>
+      <h2 id="style"><a href="#style" class="headerlink" title="style"></a>style</h2><pre><code>*{
+    margin: 0;
+    padding: 0;
+}
+ul{list-style: none;}
+a{text-decoration: none;color: #333;}
+a:hover{color: purple;}
+ul{
+    width: 500px;
+    margin: 20px auto;
+}
+.wraper{width: 800px;margin: auto;}
+.timeline li{                
+    border-left: 1px solid #ebebeb;
+    position: relative;
+    height: 100px;
+}
+.timeline span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: purple;
+    left: -6px;
+    top: -10px;
+}
+.timeline div{
+    position: absolute;
+    top: -14px;
+    width: 200px;
+}
+.timeline li:nth-child(odd) div{
+    left: 20px;
+}
+.timeline li:nth-child(even) div{
+    left: -220px;
+    text-align: right;
+}
+.timeline li:nth-child(even) div p{
+    text-align: right;
+}
+.timeline p{
+    font-size: 12px;
+    color: #ccc;
+}
+.timeline a{
+    font-size: 14px;
+    line-height: 30px;
+}
+</code></pre><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><pre><code>&lt;div class=&quot;wraper&quot;&gt;
+    &lt;h3&gt;时间轴&lt;/h3&gt;
+    &lt;div&gt;
+        &lt;textarea name=&quot;&quot; rows=&quot;&quot; cols=&quot;&quot; placeholder=&quot;请输入文字&quot;&gt;&lt;/textarea&gt;
+        &lt;input type=&quot;button&quot; value=&quot;记录&quot; id=&quot;btn&quot;/&gt;
+        &lt;p id=&quot;tip&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;timeline&quot;&gt;&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre><h2 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h2><pre><code>$(function(){
+    var Y,M,D,H;
+    function show(){
+        var mydate = new Date();
+        Y = mydate.getFullYear()+&quot;-&quot;;
+        M = (mydate.getMonth()+1)+&quot;-&quot;;
+        D = mydate.getDate();
+        H=mydate.toLocaleTimeString();
+
+    }
+    show();
+    //prepend()---在文档的开头插入内容
+    $(&quot;#btn&quot;).click(function(){
+          if($(&apos;textarea&apos;).val()!=&quot;&quot;){
+              $(&quot;.timeline&quot;).prepend(&quot;&lt;li&gt;&lt;span&gt;&lt;/span&gt;&lt;div&gt;&lt;p&gt;&quot;+Y+M+D+&quot;&lt;/p&gt;&lt;a href=&apos;&apos;&gt;&quot;+$(&apos;textarea&apos;).val()+&quot;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&quot;)
+          }else{
+              alert(&quot;请输入文字&quot;)
+          }
+
+    });
+})
+</code></pre><h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p><img src="/2017/07/04/简单的时间轴/1.png" alt="演示1"></p>
 
     
   </div>
@@ -282,10 +344,10 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/06/17/hexo插入图片/">
+    <a class="show pull-left" href="/2017/07/04/关于Hbuilder/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/07/04/简单的时间轴/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -410,7 +472,7 @@
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/07/04/关于Hbuilder/';
+    var disqus_url = 'https://bobo-33.github.io/2017/07/04/简单的时间轴/';
     
     (function(){
       var dsq = document.createElement('script');
