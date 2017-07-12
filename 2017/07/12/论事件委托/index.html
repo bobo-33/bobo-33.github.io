@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>由一个简单的轮播图想到的 | flowers</title>
+  <title>论事件委托 | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,17 +15,27 @@
     <meta name="keywords" content="javascript," />
   
 
-  <meta name="description" content="一个简单的轮播图小代码&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;     &amp;lt;head&amp;gt;         &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;         &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;     &amp;lt;/head&amp;gt;     &amp;lt;body&amp;gt;         &amp;lt;div id=">
+  <meta name="description" content="从前对js的各种方法迷迷糊糊，最近一直在潜心学习js,知道了学会事件委托事件真的能做太多事情啦~ 概念什么是事件委托：通俗的讲，事件就是onclick，onmouseover，onmouseout，等就是事件，委托呢，就是让别人来做，这个事件本来是加在某些元素上的，然而你却加到别人身上来做，完成这个事件。　　举个列子：有三个同事预计会在周一收到快递。为签收快递，有两种办法：一是三个人在公司门口等快">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="由一个简单的轮播图想到的">
-<meta property="og:url" content="https://bobo-33.github.io/2017/07/11/由一个简单的轮播图想到的/index.html">
+<meta property="og:title" content="论事件委托">
+<meta property="og:url" content="https://bobo-33.github.io/2017/07/12/论事件委托/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="一个简单的轮播图小代码&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;     &amp;lt;head&amp;gt;         &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;         &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;     &amp;lt;/head&amp;gt;     &amp;lt;body&amp;gt;         &amp;lt;div id=">
-<meta property="og:updated_time" content="2017-07-11T04:01:07.071Z">
+<meta property="og:description" content="从前对js的各种方法迷迷糊糊，最近一直在潜心学习js,知道了学会事件委托事件真的能做太多事情啦~ 概念什么是事件委托：通俗的讲，事件就是onclick，onmouseover，onmouseout，等就是事件，委托呢，就是让别人来做，这个事件本来是加在某些元素上的，然而你却加到别人身上来做，完成这个事件。　　举个列子：有三个同事预计会在周一收到快递。为签收快递，有两种办法：一是三个人在公司门口等快">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/css.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/html.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/js.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/css1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/html1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/js1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/css2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/html2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/js2.png">
+<meta property="og:updated_time" content="2017-07-12T09:15:58.672Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="由一个简单的轮播图想到的">
-<meta name="twitter:description" content="一个简单的轮播图小代码&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;     &amp;lt;head&amp;gt;         &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;         &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;     &amp;lt;/head&amp;gt;     &amp;lt;body&amp;gt;         &amp;lt;div id=">
+<meta name="twitter:title" content="论事件委托">
+<meta name="twitter:description" content="从前对js的各种方法迷迷糊糊，最近一直在潜心学习js,知道了学会事件委托事件真的能做太多事情啦~ 概念什么是事件委托：通俗的讲，事件就是onclick，onmouseover，onmouseout，等就是事件，委托呢，就是让别人来做，这个事件本来是加在某些元素上的，然而你却加到别人身上来做，完成这个事件。　　举个列子：有三个同事预计会在周一收到快递。为签收快递，有两种办法：一是三个人在公司门口等快">
+<meta name="twitter:image" content="https://bobo-33.github.io/2017/07/12/论事件委托/css.png">
 
   
 
@@ -184,20 +194,20 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一个简单的轮播图小代码"><span class="toc-text">一个简单的轮播图小代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#辨析数组方法——shift-unshift-pop-push"><span class="toc-text">辨析数组方法——shift(),unshift(),pop(),push()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shift-方法"><span class="toc-text">shift()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#unshift-方法"><span class="toc-text">unshift()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#push-方法"><span class="toc-text">push()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pop-方法"><span class="toc-text">pop()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建数组的方式"><span class="toc-text">创建数组的方式</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#概念"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原理"><span class="toc-text">原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#作用"><span class="toc-text">作用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#事件源"><span class="toc-text">事件源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#应用场景"><span class="toc-text">应用场景</span></a></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-由一个简单的轮播图想到的" class="article article-type-post" itemprop="blogPost">
+   <article id="post-论事件委托" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">由一个简单的轮播图想到的</h1>
+    <h1 class="post-title">论事件委托</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.07.11</span>
+        <span>2017.07.12</span>
       </span>
 
       
@@ -213,7 +223,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/07/11/由一个简单的轮播图想到的/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//2017/07/12/论事件委托/#disqus_thread"></a>
         </span>
       
 
@@ -232,114 +242,45 @@
 
   <div class="article-content">
     
-      <h3 id="一个简单的轮播图小代码"><a href="#一个简单的轮播图小代码" class="headerlink" title="一个简单的轮播图小代码"></a>一个简单的轮播图小代码</h3><pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;title&gt;&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;div id=&quot;lunbo&quot;&gt;
-            &lt;img  class=&quot;Img&quot;/&gt;
-        &lt;/div&gt;
-        &lt;script type=&quot;text/javascript&quot;&gt;
-            var oImg=document.getElementsByClassName(&apos;Img&apos;);
-            var arr=[&quot;../img/7.jpg&quot;,&quot;../img/pic_bulboff.gif&quot;,&quot;../img/pic_bulbon.gif&quot;];
-            var arr1=[];
-            function lunbo(){
-                arr.unshift(arr.pop());//right                
-                for( i=0;i&lt;oImg.length;i++){
-                    oImg[i].src=arr[i];
-                }    
-                setTimeout(lunbo,1000);
-            }
-            lunbo();
-        &lt;/script&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>博主研究了好半天，觉得有一个一直不明白的问题终于懂啦~那就是shift(),unshift(),pop(),push()</p>
-<h3 id="辨析数组方法——shift-unshift-pop-push"><a href="#辨析数组方法——shift-unshift-pop-push" class="headerlink" title="辨析数组方法——shift(),unshift(),pop(),push()"></a>辨析数组方法——shift(),unshift(),pop(),push()</h3><ul>
-<li><p>shift()—–shift弹出数组第一个元素，返回被弹出的元素值</p>
+      <p>从前对js的各种方法迷迷糊糊，最近一直在潜心学习js,知道了学会事件委托事件真的能做太多事情啦~</p>
+<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>什么是事件委托：通俗的讲，事件就是onclick，onmouseover，onmouseout，等就是事件，委托呢，就是让别人来做，这个事件本来是加在某些元素上的，然而你却加到别人身上来做，完成这个事件。<br>　　举个列子：有三个同事预计会在周一收到快递。为签收快递，有两种办法：一是三个人在公司门口等快递；二是委托给前台MM代为签收。现实当中，我们大都采用委托的方案（公司也不会容忍那么多员工站在门口就为了等快递）。前台MM收到快递后，她会判断收件人是谁，然后按照收件人的要求签收，甚至代为付款。这种方案还有一个优势，那就是即使公司里来了新员工（不管多少），前台MM也会在收到寄给新员工的快递后核实并代为签收。</p>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>利用冒泡的原理，把事件加到父级上，触发执行效果。</p>
+<h1 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h1><ol>
+<li><p>性能要好</p>
 </li>
-<li><p>unshift()——unshift 在数组第一个元素前插入元素</p>
+<li><p>针对新创建的元素，直接可以拥有事件</p>
 </li>
-<li><p>pop()—–pop函数删除数组末尾元素</p>
-</li>
-<li><p>push()—–push在数组末尾添加元素</p>
-</li>
+</ol>
+<h1 id="事件源"><a href="#事件源" class="headerlink" title="事件源"></a>事件源</h1><p>跟this作用一样(他不用看指向问题，谁操作的就是谁),event对象下的</p>
+<p>以上概念性的东西相信大家都看过八百遍了，下面总结一下我发现的事件委托应用的场景（献给像我一样的js小白~）</p>
+<h1 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h1><ul>
+<li>侧边菜单栏（就是那种鼠标移上去显示子菜单的）</li>
 </ul>
-<p>在上个栗子中，每隔1000ms轮播图img的src值是arr.pop()的返回值，如此循环。</p>
-<h3 id="shift-方法"><a href="#shift-方法" class="headerlink" title="shift()方法"></a>shift()方法</h3><p> 小实例：</p>
-<pre><code>// 使用shift弹出数组第一个元素
-// 返回被弹出的元素值
-var tmp = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;];
-var val = tmp.shift();
-alert(val); // a
-alert(tmp); // b,c
-</code></pre><p>如果是一个空数组：</p>
-<pre><code>// 使用shift弹出数组第一个元素
-// 返回被弹出的元素值
-var tmp = [];
-var val = tmp.shift();
-alert(val); // undefined
-alert(tmp); // 空
-</code></pre><h3 id="unshift-方法"><a href="#unshift-方法" class="headerlink" title="unshift()方法"></a>unshift()方法</h3><pre><code>unshift // 在数组第一个元素前插入元素    
-// 使用unshift在数组第一个元素前插入元素
-// 返回数组长度
-var tmp = [&apos;a&apos;,&apos;b&apos;];
-var len = tmp.unshift(&apos;c&apos;);
-alert(len); // 3
-alert(tmp); // c,a,b
-</code></pre><p>也可以一次插入多个元素，顺序依次从左边排起</p>
-<pre><code>// 使用unshift在数组第一个元素前插入元素
-// 返回数组长度
-var tmp = [&apos;a&apos;,&apos;b&apos;];
-var len = tmp.unshift(&apos;c&apos;,&apos;d&apos;);
-alert(len); // 4
-alert(tmp); // c,d,a,b
-</code></pre><h3 id="push-方法"><a href="#push-方法" class="headerlink" title="push()方法"></a>push()方法</h3><p> 跟unshift相反，push在数组末尾添加元素，返回添加元素以后的数组长度</p>
-<pre><code>// 使用push在数组末尾添加多个元素
-// 返回数组最新长度
-var tmp = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;];
-var len = tmp.push(&apos;d&apos;);
-alert(len); // 4
-alert(tmp); // a,b,c,d
-</code></pre><p>也可以一次添加多个元素</p>
-<pre><code>// 使用push在数组末尾添加多个元素
-// 返回数组最新长度
-var tmp = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;];
-var len = tmp.push(&apos;d&apos;,&apos;e&apos;,&apos;f&apos;);
-alert(len); // 6
-alert(tmp); // a,b,c,d,e,f
-</code></pre><h3 id="pop-方法"><a href="#pop-方法" class="headerlink" title="pop()方法"></a>pop()方法</h3><p>跟shift相反，pop弹出的是数组末尾元素，返回被弹出的元素值</p>
-<pre><code>// 使用pop弹出数组末尾元素
-// 返回被弹出的元素值
-var tmp = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;];
-var val = tmp.pop();
-alert(val); // c
-alert(tmp); // a,b
-</code></pre><p>如果数组为空，返回undefined</p>
-<pre><code>// 使用pop弹出数组末尾元素
-// 返回被弹出的元素值
-var tmp = [];
-var val = tmp.pop();
-alert(val); // undefined
-alert(tmp); // 空
-</code></pre><h3 id="创建数组的方式"><a href="#创建数组的方式" class="headerlink" title="创建数组的方式"></a>创建数组的方式</h3><p>顺便再唠叨几句，关于创建数组的三种方式</p>
+<p>css代码</p>
+<p><img src="/2017/07/12/论事件委托/css.png" alt="css代码"></p>
+<p>html代码</p>
+<p><img src="/2017/07/12/论事件委托/html.png" alt="html代码"></p>
+<p>javascript代码</p>
+<p><img src="/2017/07/12/论事件委托/js.png" alt="js代码"></p>
 <ul>
-<li><p>one</p>
-<pre><code>var cars=new Array();
-cars[0]=&quot;a&quot;;
-cars[1]=&quot;b&quot;;
-cars[2]=&quot;c&quot;;
-</code></pre></li>
-<li><p>two </p>
-<pre><code>var cars=new Array(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;);
-</code></pre></li>
-<li><p>three</p>
-<pre><code>var cars=[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;];
-</code></pre></li>
+<li>还有一种在主菜单里面的那种子菜单</li>
 </ul>
+<p>css代码</p>
+<p><img src="/2017/07/12/论事件委托/css1.png" alt="css代码"></p>
+<p>html代码</p>
+<p><img src="/2017/07/12/论事件委托/html1.png" alt="html代码"></p>
+<p>javascript代码</p>
+<p><img src="/2017/07/12/论事件委托/js1.png" alt="js代码"></p>
+<ul>
+<li>tab切换</li>
+</ul>
+<p>css代码</p>
+<p><img src="/2017/07/12/论事件委托/css2.png" alt="css代码"></p>
+<p>html代码</p>
+<p><img src="/2017/07/12/论事件委托/html2.png" alt="html代码"></p>
+<p>javascript代码</p>
+<p><img src="/2017/07/12/论事件委托/js2.png" alt="js代码"></p>
+<p>总结一下就是事件委托应用到切换那一类的效果比较简单啦</p>
 
     
   </div>
@@ -370,10 +311,10 @@ cars[2]=&quot;c&quot;;
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/07/04/css-垂直居中问题总结/">
+    <a class="show pull-left" href="/2017/07/11/由一个简单的轮播图想到的/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/07/12/论事件委托/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -498,7 +439,7 @@ cars[2]=&quot;c&quot;;
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/07/11/由一个简单的轮播图想到的/';
+    var disqus_url = 'https://bobo-33.github.io/2017/07/12/论事件委托/';
     
     (function(){
       var dsq = document.createElement('script');
