@@ -15,17 +15,17 @@
     <meta name="keywords" content="css," />
   
 
-  <meta name="description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } #flex-direction  水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms">
+  <meta name="description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } flex-direction 水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms-f">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css样式兼容性写法">
 <meta property="og:url" content="https://bobo-33.github.io/2017/07/31/css样式兼容性写法/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } #flex-direction  水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms">
-<meta property="og:updated_time" content="2017-07-31T01:38:16.899Z">
+<meta property="og:description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } flex-direction 水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms-f">
+<meta property="og:updated_time" content="2017-07-31T01:43:32.408Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css样式兼容性写法">
-<meta name="twitter:description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } #flex-direction  水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms">
+<meta name="twitter:description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } flex-direction 水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms-f">
 
   
 
@@ -184,7 +184,7 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#display-flex"><span class="toc-text">display:flex</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#display-flex"><span class="toc-text">display:flex</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#flex-direction"><span class="toc-text">flex-direction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#垂直居中"><span class="toc-text">垂直居中</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#水平对齐方式"><span class="toc-text">水平对齐方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wrap"><span class="toc-text">wrap</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#background-image"><span class="toc-text">background-image</span></a></li></ol>
   </div>
 
 
@@ -237,8 +237,7 @@
     display:-ms-flexbox;
     display:flex;
     }
-</code></pre><p>#flex-direction</p>
-<ul>
+</code></pre><h1 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h1><ul>
 <li><p>水平</p>
 <pre><code>.flex-h{
     -webkit-box-orient: horizontal;
@@ -258,9 +257,13 @@
 }
 </code></pre></li>
 </ul>
-<p>#垂直居中<br>        {<br>            -webkit-box-align: center;<br>            -ms-flex-align: center;<br>            -ms-grid-row-align: center;<br>                align-items: center;<br>        }</p>
-<p>#水平对齐方式</p>
-<ul>
+<h1 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h1><pre><code>{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+        align-items: center;
+}
+</code></pre><h1 id="水平对齐方式"><a href="#水平对齐方式" class="headerlink" title="水平对齐方式"></a>水平对齐方式</h1><ul>
 <li><p>start</p>
 <pre><code>{
     -webkit-box-pack: start;
@@ -291,13 +294,11 @@
 }
 </code></pre></li>
 </ul>
-<p>#wrap</p>
-<pre><code>{
+<h1 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h1><pre><code>{
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
 }
-</code></pre><p>#background-image</p>
-<pre><code>{
+</code></pre><h1 id="background-image"><a href="#background-image" class="headerlink" title="background-image"></a>background-image</h1><pre><code>{
     background-image: -webkit-linear-gradient(#ddd, #ddd 50%, transparent 50%);
     background-image: linear-gradient(#ddd, #ddd 50%, transparent 50%);
 }
