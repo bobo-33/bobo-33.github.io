@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-tagsother">
+  <html class="light page-post">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: other | flowers</title>
+  <title>css样式兼容性写法 | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
+    <meta name="keywords" content="css," />
   
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="flowers">
-<meta property="og:url" content="https://bobo-33.github.io/tags/other/index.html">
+  <meta name="description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } #flex-direction  水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css样式兼容性写法">
+<meta property="og:url" content="https://bobo-33.github.io/2017/07/31/css样式兼容性写法/index.html">
 <meta property="og:site_name" content="flowers">
+<meta property="og:description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } #flex-direction  水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms">
+<meta property="og:updated_time" content="2017-07-31T01:38:16.899Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flowers">
+<meta name="twitter:title" content="css样式兼容性写法">
+<meta name="twitter:description" content="display:flex.flex{     display:-webkit-box;     display:-ms-flexbox;     display:flex;     } #flex-direction  水平 .flex-h{     -webkit-box-orient: horizontal;     -webkit-box-direction: normal;     -ms">
 
   
 
@@ -83,17 +88,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
   
 
-  <div class="content content-tag">
-  <div class="page-header">
-
-  
-    <div class="breadcrumb">
-      <div class="location">标签</div>
-      <i class="icon-location"></i>
-    </div>
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">盒子</span>
@@ -183,253 +179,175 @@
   </div>
 
 
+</div>
 
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="/images/avatar.jpg" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        bobo-33
-      </h3>
-      <div class="slogan">
-        Find the bug of the world
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#display-flex"><span class="toc-text">display:flex</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-css样式兼容性写法" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">css样式兼容性写法</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.07.31</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>bobo-33</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="https://bobo-33.github.io//2017/07/31/css样式兼容性写法/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="display-flex"><a href="#display-flex" class="headerlink" title="display:flex"></a>display:flex</h1><pre><code>.flex{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    }
+</code></pre><p>#flex-direction</p>
+<ul>
+<li><p>水平</p>
+<pre><code>.flex-h{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+</code></pre></li>
+</ul>
+<ul>
+<li><p>垂直</p>
+<pre><code>.flex-v{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column
+}
+</code></pre></li>
+</ul>
+<p>#垂直居中<br>        {<br>            -webkit-box-align: center;<br>            -ms-flex-align: center;<br>            -ms-grid-row-align: center;<br>                align-items: center;<br>        }</p>
+<p>#水平对齐方式</p>
+<ul>
+<li><p>start</p>
+<pre><code>{
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+</code></pre></li>
+<li><p>center </p>
+<pre><code>{
+
+    -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center
+}       
+</code></pre></li>
+<li><p>end    </p>
+<pre><code>{
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+    justify-content:flex-end
+}
+</code></pre></li>
+<li><p>justify</p>
+<pre><code>{
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between
+}
+</code></pre></li>
+</ul>
+<p>#wrap</p>
+<pre><code>{
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+</code></pre><p>#background-image</p>
+<pre><code>{
+    background-image: -webkit-linear-gradient(#ddd, #ddd 50%, transparent 50%);
+    background-image: linear-gradient(#ddd, #ddd 50%, transparent 50%);
+}
+</code></pre>
+    
+  </div>
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
       </div>
     </div>
   </div>
 
-</div>
 
-  <section class="tag-box">
-  <div class="tag-title">标签</div>
-  <div class="tag-list">
-    
-      <a class="tag-item" href="#css">
-        <span class="tag-name">css</span>
-        <span class="tag-size">( 2 )</span>
-      </a>
-    
-      <a class="tag-item" href="#demo">
-        <span class="tag-name">demo</span>
-        <span class="tag-size">( 1 )</span>
-      </a>
-    
-      <a class="tag-item" href="#javascript">
-        <span class="tag-name">javascript</span>
-        <span class="tag-size">( 3 )</span>
-      </a>
-    
-      <a class="tag-item" href="#other">
-        <span class="tag-name">other</span>
-        <span class="tag-size">( 2 )</span>
-      </a>
-    
-      <a class="tag-item" href="#programming">
-        <span class="tag-name">programming</span>
-        <span class="tag-size">( 7 )</span>
-      </a>
-    
-      <a class="tag-item" href="#编译器">
-        <span class="tag-name">编译器</span>
-        <span class="tag-size">( 1 )</span>
-      </a>
-    
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2017/07/24/关于for循环的一个问题/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
   </div>
-</section>
-
-  <ul class="list-post"><li id="css" class="item-category-name item-title item-title-0">
-  <!--
-    <a href="" class="text-year">
-   -->
-    css
-    <span class="category-count">( 2 )</span>
-  <!--
-  </a>
-   -->
-</li>
-<li class="item-post item">
-  <span class="post-date">07-31</span>
-
-  
-  <a class="post-title" href="/2017/07/31/css样式兼容性写法/">css样式兼容性写法</a>
 
 
-</li>
-<li class="item-post item">
-  <span class="post-date">07-04</span>
-
-  
-  <a class="post-title" href="/2017/07/04/css-垂直居中问题总结/">css---垂直居中问题总结</a>
 
 
-</li>
-<li id="demo" class="item-category-name item-title item-title-1">
-  <!--
-    <a href="" class="text-year">
-   -->
-    demo
-    <span class="category-count">( 1 )</span>
-  <!--
-  </a>
-   -->
-</li>
-<li class="item-post item">
-  <span class="post-date">07-04</span>
-
-  
-  <a class="post-title" href="/2017/07/04/简单的时间轴/">简单的时间轴</a>
-
-
-</li>
-<li id="javascript" class="item-category-name item-title item-title-2">
-  <!--
-    <a href="" class="text-year">
-   -->
-    javascript
-    <span class="category-count">( 3 )</span>
-  <!--
-  </a>
-   -->
-</li>
-<li class="item-post item">
-  <span class="post-date">07-24</span>
-
-  
-  <a class="post-title" href="/2017/07/24/关于for循环的一个问题/">关于for循环的一个问题</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">07-12</span>
-
-  
-  <a class="post-title" href="/2017/07/12/论事件委托/">论事件委托</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">07-11</span>
-
-  
-  <a class="post-title" href="/2017/07/11/由一个简单的轮播图想到的/">由一个简单的轮播图想到的</a>
-
-
-</li>
-<li id="other" class="item-category-name item-title item-title-3">
-  <!--
-    <a href="" class="text-year">
-   -->
-    other
-    <span class="category-count">( 2 )</span>
-  <!--
-  </a>
-   -->
-</li>
-<li class="item-post item">
-  <span class="post-date">06-17</span>
-
-  
-  <a class="post-title" href="/2017/06/17/hexo插入图片/">hexo插入图片方法</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/hexo基本命令/">hexo基本命令</a>
-
-
-</li>
-<li id="programming" class="item-category-name item-title item-title-4">
-  <!--
-    <a href="" class="text-year">
-   -->
-    programming
-    <span class="category-count">( 7 )</span>
-  <!--
-  </a>
-   -->
-</li>
-<li class="item-post item">
-  <span class="post-date">06-17</span>
-
-  
-  <a class="post-title" href="/2017/06/17/sass-总结2/">sass---总结2</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-17</span>
-
-  
-  <a class="post-title" href="/2017/06/17/sass-总结/">sass---总结</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-15</span>
-
-  
-  <a class="post-title" href="/2017/06/15/before和-after用法总结/">:before和:after用法总结</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-13</span>
-
-  
-  <a class="post-title" href="/2017/06/13/Vue-js-总结/">Vue.js-----总结</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/angular-js总结-1/">angular.js总结---1</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/移动端开发标准总结-2/">移动端开发标准总结---2</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/移动端开发标准总结-1/">移动端开发标准总结---1</a>
-
-
-</li>
-<li id="编译器" class="item-category-name item-title item-title-0">
-  <!--
-    <a href="" class="text-year">
-   -->
-    编译器
-    <span class="category-count">( 1 )</span>
-  <!--
-  </a>
-   -->
-</li>
-<li class="item-post item">
-  <span class="post-date">07-04</span>
-
-  
-  <a class="post-title" href="/2017/07/04/关于Hbuilder/">关于Hbuilder</a>
-
-
-</li>
-</ul>
 </div>
 
 
-
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
@@ -528,6 +446,44 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'https://bobo-33.github.io/2017/07/31/css样式兼容性写法/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
 
   
 
