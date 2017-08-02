@@ -7,27 +7,34 @@
 <head>
   <meta charset="utf-8">
   
-  <title>简单的时间轴 | flowers</title>
+  <title>本地存储小练习（完善版） | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="demo," />
+    <meta name="keywords" content="javascript," />
   
 
-  <meta name="description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
-<meta name="keywords" content="demo">
+  <meta name="description" content="接上一篇ajax小练习，这是一个完整哒~ 整体技术应用 ajax读取json文件  数组的push方法  localStorage的设置与读取  subString截取字符串   新闻列表实现HTML代码 javascript代码 json数据 界面展示 新闻列表实现HTML代码 javascript代码 json数据 界面展示">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单的时间轴">
-<meta property="og:url" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/index.html">
+<meta property="og:title" content="本地存储小练习（完善版）">
+<meta property="og:url" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/1.png">
-<meta property="og:updated_time" content="2017-07-04T03:08:20.409Z">
+<meta property="og:description" content="接上一篇ajax小练习，这是一个完整哒~ 整体技术应用 ajax读取json文件  数组的push方法  localStorage的设置与读取  subString截取字符串   新闻列表实现HTML代码 javascript代码 json数据 界面展示 新闻列表实现HTML代码 javascript代码 json数据 界面展示">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/pre-1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/pre2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/pre3.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/pre4.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/index-1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/index-2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/index-3.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/index-4.png">
+<meta property="og:updated_time" content="2017-08-02T04:01:18.316Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简单的时间轴">
-<meta name="twitter:description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
-<meta name="twitter:image" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/1.png">
+<meta name="twitter:title" content="本地存储小练习（完善版）">
+<meta name="twitter:description" content="接上一篇ajax小练习，这是一个完整哒~ 整体技术应用 ajax读取json文件  数组的push方法  localStorage的设置与读取  subString截取字符串   新闻列表实现HTML代码 javascript代码 json数据 界面展示 新闻列表实现HTML代码 javascript代码 json数据 界面展示">
+<meta name="twitter:image" content="https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/pre-1.png">
 
   
 
@@ -186,20 +193,20 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">Posts List</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#style"><span class="toc-text">style</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html"><span class="toc-text">html</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript"><span class="toc-text">javascript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#效果预览"><span class="toc-text">效果预览</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#整体技术应用"><span class="toc-text">整体技术应用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新闻列表实现"><span class="toc-text">新闻列表实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML代码"><span class="toc-text">HTML代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript代码"><span class="toc-text">javascript代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#json数据"><span class="toc-text">json数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#界面展示"><span class="toc-text">界面展示</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新闻列表实现-1"><span class="toc-text">新闻列表实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML代码-1"><span class="toc-text">HTML代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript代码-1"><span class="toc-text">javascript代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#json数据-1"><span class="toc-text">json数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#界面展示-1"><span class="toc-text">界面展示</span></a></li></ol></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-简单的时间轴" class="article article-type-post" itemprop="blogPost">
+   <article id="post-本地存储小练习（完善版）" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">简单的时间轴</h1>
+    <h1 class="post-title">本地存储小练习（完善版）</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.07.04</span>
+        <span>2017.08.02</span>
       </span>
 
       
@@ -215,7 +222,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/07/04/简单的时间轴/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//2017/08/02/本地存储小练习（完善版）/#disqus_thread"></a>
         </span>
       
 
@@ -234,86 +241,25 @@
 
   <div class="article-content">
     
-      <h2 id="style"><a href="#style" class="headerlink" title="style"></a>style</h2><pre><code>*{
-    margin: 0;
-    padding: 0;
-}
-ul{list-style: none;}
-a{text-decoration: none;color: #333;}
-a:hover{color: purple;}
-ul{
-    width: 500px;
-    margin: 20px auto;
-}
-.wraper{width: 800px;margin: auto;}
-.timeline li{                
-    border-left: 1px solid #ebebeb;
-    position: relative;
-    height: 100px;
-}
-.timeline span{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: purple;
-    left: -6px;
-    top: -10px;
-}
-.timeline div{
-    position: absolute;
-    top: -14px;
-    width: 200px;
-}
-.timeline li:nth-child(odd) div{
-    left: 20px;
-}
-.timeline li:nth-child(even) div{
-    left: -220px;
-    text-align: right;
-}
-.timeline li:nth-child(even) div p{
-    text-align: right;
-}
-.timeline p{
-    font-size: 12px;
-    color: #ccc;
-}
-.timeline a{
-    font-size: 14px;
-    line-height: 30px;
-}
-</code></pre><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><pre><code>&lt;div class=&quot;wraper&quot;&gt;
-    &lt;h3&gt;时间轴&lt;/h3&gt;
-    &lt;div&gt;
-        &lt;textarea name=&quot;&quot; rows=&quot;&quot; cols=&quot;&quot; placeholder=&quot;请输入文字&quot;&gt;&lt;/textarea&gt;
-        &lt;input type=&quot;button&quot; value=&quot;记录&quot; id=&quot;btn&quot;/&gt;
-        &lt;p id=&quot;tip&quot;&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;ul class=&quot;timeline&quot;&gt;&lt;/ul&gt;
-&lt;/div&gt;
-</code></pre><h2 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h2><pre><code>$(function(){
-    var Y,M,D,H;
-    function show(){
-        var mydate = new Date();
-        Y = mydate.getFullYear()+&quot;-&quot;;
-        M = (mydate.getMonth()+1)+&quot;-&quot;;
-        D = mydate.getDate();
-        H=mydate.toLocaleTimeString();
-
-    }
-    show();
-    //prepend()---在文档的开头插入内容
-    $(&quot;#btn&quot;).click(function(){
-          if($(&apos;textarea&apos;).val()!=&quot;&quot;){
-              $(&quot;.timeline&quot;).prepend(&quot;&lt;li&gt;&lt;span&gt;&lt;/span&gt;&lt;div&gt;&lt;p&gt;&quot;+Y+M+D+&quot;&lt;/p&gt;&lt;a href=&apos;&apos;&gt;&quot;+$(&apos;textarea&apos;).val()+&quot;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&quot;)
-          }else{
-              alert(&quot;请输入文字&quot;)
-          }
-
-    });
-})
-</code></pre><h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p><img src="/2017/07/04/简单的时间轴/1.png" alt="演示1"></p>
+      <p>接上一篇ajax小练习，这是一个完整哒~</p>
+<h1 id="整体技术应用"><a href="#整体技术应用" class="headerlink" title="整体技术应用"></a>整体技术应用</h1><ul>
+<li><p>ajax读取json文件</p>
+</li>
+<li><p>数组的push方法</p>
+</li>
+<li><p>localStorage的设置与读取</p>
+</li>
+<li><p>subString截取字符串</p>
+</li>
+</ul>
+<h1 id="新闻列表实现"><a href="#新闻列表实现" class="headerlink" title="新闻列表实现"></a>新闻列表实现</h1><h2 id="HTML代码"><a href="#HTML代码" class="headerlink" title="HTML代码"></a>HTML代码</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/pre-1.png" alt="新闻列表-HTML代码"></p>
+<h2 id="javascript代码"><a href="#javascript代码" class="headerlink" title="javascript代码"></a>javascript代码</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/pre2.png" alt="新闻列表-javascript代码"></p>
+<h2 id="json数据"><a href="#json数据" class="headerlink" title="json数据"></a>json数据</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/pre3.png" alt="新闻列表-json数据"></p>
+<h2 id="界面展示"><a href="#界面展示" class="headerlink" title="界面展示"></a>界面展示</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/pre4.png" alt="新闻列表-界面展示"></p>
+<h1 id="新闻列表实现-1"><a href="#新闻列表实现-1" class="headerlink" title="新闻列表实现"></a>新闻列表实现</h1><h2 id="HTML代码-1"><a href="#HTML代码-1" class="headerlink" title="HTML代码"></a>HTML代码</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/index-1.png" alt="新闻列表-HTML代码"></p>
+<h2 id="javascript代码-1"><a href="#javascript代码-1" class="headerlink" title="javascript代码"></a>javascript代码</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/index-2.png" alt="新闻列表-javascript代码"></p>
+<h2 id="json数据-1"><a href="#json数据-1" class="headerlink" title="json数据"></a>json数据</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/index-3.png" alt="新闻列表-json数据"></p>
+<h2 id="界面展示-1"><a href="#界面展示-1" class="headerlink" title="界面展示"></a>界面展示</h2><p><img src="/2017/08/02/本地存储小练习（完善版）/index-4.png" alt="新闻列表-j界面展示"></p>
 
     
   </div>
@@ -344,10 +290,10 @@ ul{
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/07/04/关于Hbuilder/">
+    <a class="show pull-left" href="/2017/08/01/本地存储小练习/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/07/04/css-垂直居中问题总结/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -472,7 +418,7 @@ ul{
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/07/04/简单的时间轴/';
+    var disqus_url = 'https://bobo-33.github.io/2017/08/02/本地存储小练习（完善版）/';
     
     (function(){
       var dsq = document.createElement('script');
