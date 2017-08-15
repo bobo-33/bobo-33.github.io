@@ -7,27 +7,35 @@
 <head>
   <meta charset="utf-8">
   
-  <title>简单的时间轴 | flowers</title>
+  <title>weinre远程调试移动网页 | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="demo," />
+    <meta name="keywords" content="调试," />
   
 
-  <meta name="description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
-<meta name="keywords" content="demo">
+  <meta name="description" content="在 PC 端，我们可以使用 Firebug 或者 Chrome 开发人员工具方便的调试网站或者 Web 应用。在移动端调试站点或者应用的时候可以使用Weinre调试。 weinre的安装安装node.js环境因为weinre是基于node.js，所以在安装weinre调试器之前需要安装node.js环境。安装完之后如下：  找到如一图所示时就可以继续安装weinre. 安装weinre解析包npm">
+<meta name="keywords" content="调试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单的时间轴">
-<meta property="og:url" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/index.html">
+<meta property="og:title" content="weinre远程调试移动网页">
+<meta property="og:url" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/index.html">
 <meta property="og:site_name" content="flowers">
-<meta property="og:description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
-<meta property="og:image" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/1.png">
-<meta property="og:updated_time" content="2017-07-04T03:08:20.409Z">
+<meta property="og:description" content="在 PC 端，我们可以使用 Firebug 或者 Chrome 开发人员工具方便的调试网站或者 Web 应用。在移动端调试站点或者应用的时候可以使用Weinre调试。 weinre的安装安装node.js环境因为weinre是基于node.js，所以在安装weinre调试器之前需要安装node.js环境。安装完之后如下：  找到如一图所示时就可以继续安装weinre. 安装weinre解析包npm">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/3.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/4.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/5.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/6.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/7.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/8.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/9.png">
+<meta property="og:updated_time" content="2017-08-15T07:22:30.355Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简单的时间轴">
-<meta name="twitter:description" content="style*{     margin: 0;     padding: 0; } ul{list-style: none;} a{text-decoration: none;color: #333;} a:hover{color: purple;} ul{     width: 500px;     margin: 20px auto; } .wraper{width: 800px;margin:">
-<meta name="twitter:image" content="https://bobo-33.github.io/2017/07/04/简单的时间轴/1.png">
+<meta name="twitter:title" content="weinre远程调试移动网页">
+<meta name="twitter:description" content="在 PC 端，我们可以使用 Firebug 或者 Chrome 开发人员工具方便的调试网站或者 Web 应用。在移动端调试站点或者应用的时候可以使用Weinre调试。 weinre的安装安装node.js环境因为weinre是基于node.js，所以在安装weinre调试器之前需要安装node.js环境。安装完之后如下：  找到如一图所示时就可以继续安装weinre. 安装weinre解析包npm">
+<meta name="twitter:image" content="https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/weinre/1.png">
 
   
 
@@ -186,20 +194,20 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">Posts List</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#style"><span class="toc-text">style</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html"><span class="toc-text">html</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript"><span class="toc-text">javascript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#效果预览"><span class="toc-text">效果预览</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#weinre的安装"><span class="toc-text">weinre的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装node-js环境"><span class="toc-text">安装node.js环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装weinre解析包"><span class="toc-text">安装weinre解析包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动weinre"><span class="toc-text">启动weinre</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Weinre的使用"><span class="toc-text">Weinre的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#检查weinre安装是否成功"><span class="toc-text">检查weinre安装是否成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#把weinre与目标文件联系起来"><span class="toc-text">把weinre与目标文件联系起来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调试weinre"><span class="toc-text">调试weinre</span></a></li></ol></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-简单的时间轴" class="article article-type-post" itemprop="blogPost">
+   <article id="post-weinre远程调试移动网页" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">简单的时间轴</h1>
+    <h1 class="post-title">weinre远程调试移动网页</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2017.07.04</span>
+        <span>2017.08.15</span>
       </span>
 
       
@@ -215,7 +223,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="https://bobo-33.github.io//2017/07/04/简单的时间轴/#disqus_thread"></a>
+          <a href="https://bobo-33.github.io//2017/08/15/weinre远程调试移动网页/#disqus_thread"></a>
         </span>
       
 
@@ -234,86 +242,27 @@
 
   <div class="article-content">
     
-      <h2 id="style"><a href="#style" class="headerlink" title="style"></a>style</h2><pre><code>*{
-    margin: 0;
-    padding: 0;
-}
-ul{list-style: none;}
-a{text-decoration: none;color: #333;}
-a:hover{color: purple;}
-ul{
-    width: 500px;
-    margin: 20px auto;
-}
-.wraper{width: 800px;margin: auto;}
-.timeline li{                
-    border-left: 1px solid #ebebeb;
-    position: relative;
-    height: 100px;
-}
-.timeline span{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: purple;
-    left: -6px;
-    top: -10px;
-}
-.timeline div{
-    position: absolute;
-    top: -14px;
-    width: 200px;
-}
-.timeline li:nth-child(odd) div{
-    left: 20px;
-}
-.timeline li:nth-child(even) div{
-    left: -220px;
-    text-align: right;
-}
-.timeline li:nth-child(even) div p{
-    text-align: right;
-}
-.timeline p{
-    font-size: 12px;
-    color: #ccc;
-}
-.timeline a{
-    font-size: 14px;
-    line-height: 30px;
-}
-</code></pre><h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><pre><code>&lt;div class=&quot;wraper&quot;&gt;
-    &lt;h3&gt;时间轴&lt;/h3&gt;
-    &lt;div&gt;
-        &lt;textarea name=&quot;&quot; rows=&quot;&quot; cols=&quot;&quot; placeholder=&quot;请输入文字&quot;&gt;&lt;/textarea&gt;
-        &lt;input type=&quot;button&quot; value=&quot;记录&quot; id=&quot;btn&quot;/&gt;
-        &lt;p id=&quot;tip&quot;&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;ul class=&quot;timeline&quot;&gt;&lt;/ul&gt;
-&lt;/div&gt;
-</code></pre><h2 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h2><pre><code>$(function(){
-    var Y,M,D,H;
-    function show(){
-        var mydate = new Date();
-        Y = mydate.getFullYear()+&quot;-&quot;;
-        M = (mydate.getMonth()+1)+&quot;-&quot;;
-        D = mydate.getDate();
-        H=mydate.toLocaleTimeString();
-
-    }
-    show();
-    //prepend()---在文档的开头插入内容
-    $(&quot;#btn&quot;).click(function(){
-          if($(&apos;textarea&apos;).val()!=&quot;&quot;){
-              $(&quot;.timeline&quot;).prepend(&quot;&lt;li&gt;&lt;span&gt;&lt;/span&gt;&lt;div&gt;&lt;p&gt;&quot;+Y+M+D+&quot;&lt;/p&gt;&lt;a href=&apos;&apos;&gt;&quot;+$(&apos;textarea&apos;).val()+&quot;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&quot;)
-          }else{
-              alert(&quot;请输入文字&quot;)
-          }
-
-    });
-})
-</code></pre><h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p><img src="/2017/07/04/简单的时间轴/1.png" alt="演示1"></p>
+      <p>在 PC 端，我们可以使用 Firebug 或者 Chrome 开发人员工具方便的调试网站或者 Web 应用。在移动端调试站点或者应用的时候可以使用Weinre调试。</p>
+<h1 id="weinre的安装"><a href="#weinre的安装" class="headerlink" title="weinre的安装"></a>weinre的安装</h1><h2 id="安装node-js环境"><a href="#安装node-js环境" class="headerlink" title="安装node.js环境"></a>安装node.js环境</h2><p>因为weinre是基于node.js，所以在安装weinre调试器之前需要安装node.js环境。安装完之后如下：</p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/1.png" alt="步骤一"></p>
+<p>找到如一图所示时就可以继续安装weinre.</p>
+<h2 id="安装weinre解析包"><a href="#安装weinre解析包" class="headerlink" title="安装weinre解析包"></a>安装weinre解析包</h2><pre><code>npm -g install weinre
+</code></pre><p>安装完如图二</p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/2.png" alt="步骤二"></p>
+<h2 id="启动weinre"><a href="#启动weinre" class="headerlink" title="启动weinre"></a>启动weinre</h2><pre><code>weinre -httpPort 8081(或者8080) -boundHost -all-
+</code></pre><p>安装完如图三</p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/3.png" alt="步骤三"></p>
+<h1 id="Weinre的使用"><a href="#Weinre的使用" class="headerlink" title="Weinre的使用"></a>Weinre的使用</h1><h2 id="检查weinre安装是否成功"><a href="#检查weinre安装是否成功" class="headerlink" title="检查weinre安装是否成功"></a>检查weinre安装是否成功</h2><p>在浏览器里打开localhost：8081（或者8080）</p>
+<p>如果安装成功则显示如下图</p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/4.png" alt="步骤四"></p>
+<h2 id="把weinre与目标文件联系起来"><a href="#把weinre与目标文件联系起来" class="headerlink" title="把weinre与目标文件联系起来"></a>把weinre与目标文件联系起来</h2><p><img src="/2017/08/15/weinre远程调试移动网页/weinre/5.png" alt="步骤五"></p>
+<h2 id="调试weinre"><a href="#调试weinre" class="headerlink" title="调试weinre"></a>调试weinre</h2><p><img src="/2017/08/15/weinre远程调试移动网页/weinre/6.png" alt="步骤六"></p>
+<p>按照如图所示会进入到如下页面</p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/7.png" alt="步骤七"></p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/8.png" alt="步骤八"></p>
+<p>完成如图八所示后点击targets中的链接，会变成绿色</p>
+<p><img src="/2017/08/15/weinre远程调试移动网页/weinre/9.png" alt="步骤九"></p>
+<p>最后就可以查看elements中的内容并进行实时调试啦</p>
 
     
   </div>
@@ -344,10 +293,10 @@ ul{
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2017/07/04/关于Hbuilder/">
+    <a class="show pull-left" href="/2017/08/02/本地存储小练习（完善版）/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2017/07/04/css-垂直居中问题总结/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -472,7 +421,7 @@ ul{
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'https://bobo-33.github.io/2017/07/04/简单的时间轴/';
+    var disqus_url = 'https://bobo-33.github.io/2017/08/15/weinre远程调试移动网页/';
     
     (function(){
       var dsq = document.createElement('script');
