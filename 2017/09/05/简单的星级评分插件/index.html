@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-archives">
+  <html class="light page-post">
 
 
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | flowers</title>
+  <title>简单的星级评分插件 | flowers</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
+    <meta name="keywords" content="jquery," />
   
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="flowers">
-<meta property="og:url" content="https://bobo-33.github.io/archives/page/2/index.html">
+  <meta name="description" content="插件描述 插件涉及知识点 事件委托  全局变量的依赖  代码的复用  插件的编写   插件结构 html css javascript  插件详解星级评分—插件详解地址">
+<meta name="keywords" content="jquery">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单的星级评分插件">
+<meta property="og:url" content="https://bobo-33.github.io/2017/09/05/简单的星级评分插件/index.html">
 <meta property="og:site_name" content="flowers">
+<meta property="og:description" content="插件描述 插件涉及知识点 事件委托  全局变量的依赖  代码的复用  插件的编写   插件结构 html css javascript  插件详解星级评分—插件详解地址">
+<meta property="og:image" content="https://bobo-33.github.io/2017/09/05/简单的星级评分插件/1.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/09/05/简单的星级评分插件/2.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/09/05/简单的星级评分插件/3.png">
+<meta property="og:image" content="https://bobo-33.github.io/2017/09/05/简单的星级评分插件/4.png">
+<meta property="og:updated_time" content="2017-09-05T07:14:38.133Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="flowers">
+<meta name="twitter:title" content="简单的星级评分插件">
+<meta name="twitter:description" content="插件描述 插件涉及知识点 事件委托  全局变量的依赖  代码的复用  插件的编写   插件结构 html css javascript  插件详解星级评分—插件详解地址">
+<meta name="twitter:image" content="https://bobo-33.github.io/2017/09/05/简单的星级评分插件/1.png">
 
   
 
@@ -83,17 +93,8 @@
     <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
   
 
-  <div class="content content-archive">
-  <div class="page-header">
-
-  
-    <div class="breadcrumb">
-      <div class="location">博客</div>
-      <i class="icon-location"></i>
-    </div>
-  
-
-  
+  <div class="post-header CENTER">
+   
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">盒子</span>
@@ -183,129 +184,123 @@
   </div>
 
 
+</div>
 
-  <div class="box-blog-info">
-    <a class="avatar" href="/">
-      <img src="/images/avatar.jpg" alt="" />
-    </a>
-    <div class="info">
-      <h3 class="name" style="font-family: calligraffittiregular">
-        bobo-33
-      </h3>
-      <div class="slogan">
-        Find the bug of the world
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#插件描述"><span class="toc-text">插件描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插件涉及知识点"><span class="toc-text">插件涉及知识点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插件结构"><span class="toc-text">插件结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插件详解"><span class="toc-text">插件详解</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-简单的星级评分插件" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">简单的星级评分插件</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.09.05</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>bobo-33</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="https://bobo-33.github.io//2017/09/05/简单的星级评分插件/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h3 id="插件描述"><a href="#插件描述" class="headerlink" title="插件描述"></a>插件描述</h3><p><img src="/2017/09/05/简单的星级评分插件/1.png" alt="效果图展示"></p>
+<h3 id="插件涉及知识点"><a href="#插件涉及知识点" class="headerlink" title="插件涉及知识点"></a>插件涉及知识点</h3><ul>
+<li><p>事件委托</p>
+</li>
+<li><p>全局变量的依赖</p>
+</li>
+<li><p>代码的复用</p>
+</li>
+<li><p>插件的编写</p>
+</li>
+</ul>
+<h3 id="插件结构"><a href="#插件结构" class="headerlink" title="插件结构"></a>插件结构</h3><ul>
+<li>html<br><img src="/2017/09/05/简单的星级评分插件/2.png" alt="html"></li>
+<li>css<br><img src="/2017/09/05/简单的星级评分插件/3.png" alt="css"></li>
+<li>javascript<br><img src="/2017/09/05/简单的星级评分插件/4.png" alt="js"></li>
+</ul>
+<h3 id="插件详解"><a href="#插件详解" class="headerlink" title="插件详解"></a>插件详解</h3><p><a href="https://github.com/bobo-33/Star-rating---1" target="_blank" rel="external">星级评分—插件详解地址</a></p>
+
+    
+  </div>
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
       </div>
     </div>
   </div>
 
-</div>
 
-
-  <div class="post-list-box archive-body">
-    <ul class="list-post">  <li class="item-year item item-title item-title-2">
-    <a href="/archives/2017" class="text-year">
-      2017
-      <i class="icon-ji"></i>
-      
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2017/08/15/weinre远程调试移动网页/">
+        <i class="icon icon-angle-left"></i>
     </a>
-  </li>
-<li class="item-post item">
-  <span class="post-date">07-04</span>
-
-  
-  <a class="post-title" href="/2017/07/04/简单的时间轴/">简单的时间轴</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">07-04</span>
-
-  
-  <a class="post-title" href="/2017/07/04/关于Hbuilder/">关于Hbuilder</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-17</span>
-
-  
-  <a class="post-title" href="/2017/06/17/hexo插入图片/">hexo插入图片方法</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-17</span>
-
-  
-  <a class="post-title" href="/2017/06/17/sass-总结2/">sass---总结2</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-17</span>
-
-  
-  <a class="post-title" href="/2017/06/17/sass-总结/">sass---总结</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-15</span>
-
-  
-  <a class="post-title" href="/2017/06/15/before和-after用法总结/">:before和:after用法总结</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-13</span>
-
-  
-  <a class="post-title" href="/2017/06/13/Vue-js-总结/">Vue.js-----总结</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/angular-js总结-1/">angular.js总结---1</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/移动端开发标准总结-2/">移动端开发标准总结---2</a>
-
-
-</li>
-<li class="item-post item">
-  <span class="post-date">06-07</span>
-
-  
-  <a class="post-title" href="/2017/06/07/移动端开发标准总结-1/">移动端开发标准总结---1</a>
-
-
-</li>
-</ul>
-  </div>
-
-  <div class="archive-footer">
-    
-  <div class="pagination">
-    <nav class="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/"><i class="icon-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/"><i class="icon-angle-right"></i></a>
-    </nav>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
   </div>
 
 
-  </div>
+
+
 </div>
 
 
-
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
 
 
 
@@ -404,6 +399,44 @@
 </div>
 
 
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'https://bobo-33.github.io/2017/09/05/简单的星级评分插件/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
 
   
 
